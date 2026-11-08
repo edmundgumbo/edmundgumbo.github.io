@@ -460,6 +460,32 @@ footer { border-top: 1px solid var(--line); }
 .rv.in { opacity: 1; transform: none; }
 .no-io .rv { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .rv { opacity: 1; transform: none; } }
+
+/* Lead Engine case */
+.le-case { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 72px); align-items: center; margin-top: clamp(40px, 6vw, 64px); }
+.le-case h3 { font-size: clamp(1.5rem, 1rem + 1.6vw, 2.1rem); line-height: 1.1; letter-spacing: -0.025em; font-weight: 800; }
+.le-app { overflow: hidden; border-radius: 16px; }
+.le-body { padding: clamp(14px, 2.4vw, 22px); display: grid; gap: 14px; }
+.le-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.le-title { font-family: var(--display); font-weight: 800; font-size: 1rem; letter-spacing: -0.01em; }
+.le-title small { display: block; font-family: var(--text); font-weight: 500; font-size: 0.74rem; color: var(--ink-mute); }
+.le-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.le-stat { background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.le-stat b { display: block; font-family: var(--display); font-size: 1.3rem; font-weight: 800; }
+.le-stat span { font-size: 0.72rem; color: var(--ink-mute); }
+.le-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.le-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 12px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-2); }
+.le-row .n { font-weight: 700; font-size: 0.9rem; line-height: 1.25; }
+.le-row .w { font-size: 0.74rem; color: var(--ink-mute); }
+.le-score { font-family: var(--mono); font-size: 0.78rem; font-weight: 700; padding: 4px 9px; border-radius: 999px; color: var(--on-accent); background: var(--grad); }
+.le-score.mid { background: var(--surface-2); color: var(--ink-soft); border: 1px solid var(--line-2); }
+.le-gate { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px; border: 1px dashed var(--line-2); border-radius: 12px; font-size: 0.82rem; color: var(--ink-soft); }
+.le-tog { width: 38px; height: 22px; border-radius: 999px; background: var(--ok); position: relative; flex: none; }
+.le-tog::after { content: ""; position: absolute; top: 3px; right: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; }
+.le-clients { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.le-clients span { font-family: var(--display); font-size: 0.74rem; font-weight: 700; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line-2); color: var(--ink); }
+@media (max-width: 900px) { .le-case { grid-template-columns: 1fr; } .le-case .le-shot { order: 2; } }
+@media (max-width: 520px) { .le-row { grid-template-columns: minmax(0, 1fr) auto; } .le-row .chip { display: none; } .le-stat b { font-size: 1.1rem; } }
 </style>
 </head>
 <body>
@@ -693,6 +719,49 @@ footer { border-top: 1px solid var(--line); }
   </div>
 </section>
 
+<section class="case" id="leads">
+  <div class="wrap">
+    <div class="case-head rv">
+      <div>
+        <p class="case-no"><b>Case 03</b> Lead Engine · Business to business sales · Live</p>
+        <h2 class="h2">It finds the buyers. The sales team just makes the call.</h2>
+      </div>
+      <p class="lead">Lead Engine watches the news, new business listings and company job boards for signs that a business is ready to buy. AI scores every signal against each client's ideal buyer, and only the strongest leads go through. Built, hosted and run by Busy Signal IT.</p>
+    </div>
+    <div class="le-case">
+      <div class="rv">
+        <h3>Signals in. Qualified leads out.</h3>
+        <ul class="ticks">
+          <li>News, new businesses and hiring signals pulled in every day</li>
+          <li>AI scores each lead against the client's buyer profile</li>
+          <li>Nothing reaches a client until I approve it</li>
+          <li>Weekly report on leads, meetings and deals</li>
+          <li>One platform that grows with every new client</li>
+        </ul>
+        <div class="le-clients" aria-label="Clients"><span>Celestia AV</span><span>Leading Business Systems</span></div>
+        <div class="cta"><a class="btn" href="https://busysignal-leads.netlify.app" target="_blank" rel="noopener">See Lead Engine live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
+      </div>
+      <div class="le-shot rv">
+        <div class="card le-app">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="url">busysignal-leads.netlify.app</span></div>
+          <div class="le-body">
+            <div class="le-top"><div class="le-title">This week's leads<small>Sample data. The real dashboard sits behind a client login.</small></div><span class="pill">Live</span></div>
+            <div class="le-stats"><div class="le-stat"><b>146</b><span>Signals found</span></div><div class="le-stat"><b>18</b><span>Scored 80+</span></div><div class="le-stat"><b>6</b><span>Sent to client</span></div></div>
+            <ul class="le-rows" aria-label="Leads, sample data">
+              <li class="le-row"><div><div class="n">Umhlanga Conference Centre</div><div class="w">News · Expanding to three new venues</div></div><span class="chip ok">Ready</span><span class="le-score">92</span></li>
+              <li class="le-row"><div><div class="n">Karoo Logistics</div><div class="w">Hiring · Office manager, new Midrand branch</div></div><span class="chip ok">Ready</span><span class="le-score">87</span></li>
+              <li class="le-row"><div><div class="n">Bloem Dental Group</div><div class="w">New business · Opened in Bloemfontein</div></div><span class="chip">Review</span><span class="le-score">81</span></li>
+              <li class="le-row"><div><div class="n">Vaal Print Studio</div><div class="w">News · Moving premises</div></div><span class="chip">Watch</span><span class="le-score mid">64</span></li>
+            </ul>
+            <div class="le-gate"><span>Allow leads to reach the client</span><span class="le-tog" aria-hidden="true"></span></div>
+          </div>
+        </div>
+        <p class="cap">Redrawn with made up businesses and numbers. The real one runs live for our clients.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="yours" id="yours">
   <div class="wrap">
     <div class="yours-card rv">
@@ -722,7 +791,7 @@ footer { border-top: 1px solid var(--line); }
   <div class="wrap">
     <div class="case-head rv">
       <div>
-        <p class="case-no"><b>Case 03</b> Busy Signal IT · Brand identity</p>
+        <p class="case-no"><b>Case 04</b> Busy Signal IT · Brand identity</p>
         <h2 class="h2">The brand is built here too.</h2>
       </div>
       <p class="lead">A B that broadcasts: a signal going out and two waves answering back, the opposite of a busy line. One mark that works in orange on dark, black on light and white on anything, with a wordmark that keeps IT in orange.</p>
