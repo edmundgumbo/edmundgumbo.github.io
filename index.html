@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Busy Signal IT · It answers.</title>
-<meta name="description" content="Busy Signal IT builds AI agents, websites and business systems for any business with a routine. Edmund Gumbo, Johannesburg, working worldwide.">
-<meta name="theme-color" content="#0B0C11">
+<title>Edmund Gumbo · Busy Signal IT</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Edmund Gumbo builds websites, WhatsApp assistants and simple business systems through Busy Signal IT. Johannesburg and Harare, working with businesses anywhere.">
+<meta name="theme-color" content="#0D1219">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Busy Signal IT · It answers.">
-<meta property="og:description" content="AI agents, websites and business systems for any business with a routine.">
+<meta property="og:title" content="Edmund Gumbo · Busy Signal IT">
+<meta property="og:description" content="Websites, WhatsApp assistants and business systems that answer for your business.">
 <meta property="og:url" content="https://edmundgumbo.github.io/">
 <meta property="og:image" content="https://edmundgumbo.github.io/assets/brand/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -19,1084 +20,752 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-:root, :root[data-theme="dark"] {
-  --bg: #0B0C11; --bg-2: #101119; --surface: #151722; --surface-2: #1B1E2B;
-  --ink: #F4F5F8; --ink-soft: #A2A7B6; --ink-mute: #6E7385;
-  --line: #252836; --line-2: #33374A;
-  --accent: #FF6A1A; --accent-2: #FFB300; --sun: #FFD54F; --it: #FF5722;
-  --grad: linear-gradient(135deg, #FF4A00 0%, #FF7A00 55%, #FFA200 100%);
-  --on-accent: #120A04;
-  --glow-a: rgb(255 106 26 / 0.20); --glow-b: rgb(140 20 30 / 0.18); --glow-c: rgb(30 60 140 / 0.18);
-  --shade: 0 0 0; --ok: #22C55E;
-  --mk-b: url(#bsg); --mk-tri: #FFD54F; --mk-a1: #FFB300; --mk-a2: #FFB300; --mk-a2o: 0.55;
+/* Layout: one person, one long table. Editorial serif headlines over the navy and wood of the chess photo; hairline rows instead of cards; each case carries one small working demo. */
+:root {
+  --bg: #0D1219; --bg-2: #121925; --raise: #18212F;
+  --ink: #EEE9E0; --soft: #B4B9C1; --mute: #7D8794;
+  --line: rgba(238,233,224,.12); --line-2: rgba(238,233,224,.22);
+  --accent: #FF5A1F; --on-accent: #160A03; --brass: #C9A36B;
+  --ok: #4CC38A;
+  --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --sans: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --wrap: 1180px;
   color-scheme: dark;
 }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --bg: #F6F3EE; --bg-2: #EDE8E0; --raise: #FFFFFF;
+  --ink: #141A22; --soft: #3F4752; --mute: #6A727D;
+  --line: rgba(20,26,34,.13); --line-2: rgba(20,26,34,.24);
+  --accent: #D9440B; --on-accent: #FFFFFF; --brass: #8A6634; --ok: #1E8A57;
+  color-scheme: light; } }
 :root[data-theme="light"] {
-  --bg: #FAF8F4; --bg-2: #F3EFE8; --surface: #FFFFFF; --surface-2: #F6F3EE;
-  --ink: #15161B; --ink-soft: #565B6A; --ink-mute: #8A909C;
-  --line: #E6E0D6; --line-2: #D8D0C3;
-  --accent: #E8402A; --accent-2: #C4161C; --sun: #E8402A; --it: #E8402A;
-  --grad: linear-gradient(135deg, #C4161C 0%, #E8402A 55%, #F26A1E 100%);
-  --on-accent: #FFFFFF;
-  --glow-a: rgb(232 64 42 / 0.10); --glow-b: rgb(242 106 30 / 0.09); --glow-c: rgb(255 179 0 / 0.08);
-  --shade: 60 40 20; --ok: #16A34A;
-  --mk-b: #15161B; --mk-tri: #E8402A; --mk-a1: #E8402A; --mk-a2: #E8402A; --mk-a2o: 0.5;
+  --bg: #F6F3EE; --bg-2: #EDE8E0; --raise: #FFFFFF;
+  --ink: #141A22; --soft: #3F4752; --mute: #6A727D;
+  --line: rgba(20,26,34,.13); --line-2: rgba(20,26,34,.24);
+  --accent: #D9440B; --on-accent: #FFFFFF; --brass: #8A6634; --ok: #1E8A57;
   color-scheme: light;
 }
-:root {
-  --display: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-  --text: "DM Sans", "Helvetica Neue", Arial, sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
-  --ease: cubic-bezier(0.23, 1, 0.32, 1);
-  --gl: max(20px, env(safe-area-inset-left, 0px)); --gr: max(20px, env(safe-area-inset-right, 0px));
-  --section: clamp(84px, 11vw, 160px); --radius: 20px;
+:root[data-theme="dark"] {
+  --bg: #0D1219; --bg-2: #121925; --raise: #18212F;
+  --ink: #EEE9E0; --soft: #B4B9C1; --mute: #7D8794;
+  --line: rgba(238,233,224,.12); --line-2: rgba(238,233,224,.22);
+  --accent: #FF5A1F; --on-accent: #160A03; --brass: #C9A36B; --ok: #4CC38A;
+  color-scheme: dark;
 }
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: clip; }
-body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--text); font-size: 1.0625rem; line-height: 1.62; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; transition: background-color 300ms var(--ease), color 300ms var(--ease); }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; transition: background .3s, color .3s; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--bg); }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
 ::selection { background: var(--accent); color: var(--on-accent); }
-a { color: var(--accent); text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
-:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; border-radius: 4px; }
-img { display: block; max-width: 100%; height: auto; }
-h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; color: var(--ink); }
-p { margin: 0; text-wrap: pretty; }
-button { font: inherit; }
-.wrap { max-width: 1240px; margin: 0 auto; padding-left: var(--gl); padding-right: var(--gr); }
-.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+.label { font: 500 12px/1.4 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--mute); }
+.label b { color: var(--brass); font-weight: 500; }
+h1, h2, h3 { margin: 0; font-weight: 400; text-wrap: balance; }
+h2 { font: 400 clamp(40px, 6vw, 76px)/1.02 var(--serif); letter-spacing: -.01em; }
+h2 em, h1 em { color: var(--accent); }
+p { margin: 0; }
+.lead { font-size: clamp(18px, 1.6vw, 20px); color: var(--soft); max-width: 58ch; }
+section { padding-block: clamp(72px, 10vw, 128px); border-top: 1px solid var(--line); }
+.sec-head { display: grid; gap: 18px; margin-bottom: clamp(36px, 5vw, 56px); }
 
-/* Mark */
-.bsm { display: block; overflow: visible; }
-.bsm .mk-b { fill: var(--mk-b); } .bsm .mk-tri { fill: var(--mk-tri); } .bsm .mk-a1 { fill: var(--mk-a1); } .bsm .mk-a2 { fill: var(--mk-a2); fill-opacity: var(--mk-a2o); }
-.word { font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; color: var(--ink); white-space: nowrap; }
-.word i { font-style: normal; color: var(--it); }
-.tag { font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: 0.34em; color: var(--accent-2); }
-:root[data-theme="light"] .tag { color: var(--ink-mute); }
-.grad-text { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
-@keyframes blink { 0%, 100% { opacity: 1; } 45% { opacity: 0.25; } }
+/* buttons */
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 999px; font: 600 15px/1 var(--sans); text-decoration: none; border: 1px solid var(--line-2); background: transparent; color: var(--ink); cursor: pointer; transition: transform .2s, background .2s, border-color .2s; }
+.btn:hover { transform: translateY(-2px); border-color: var(--ink); }
+.btn.go { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.btn.go:hover { filter: brightness(1.08); }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.link { font: 500 14px/1 var(--mono); color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line-2); padding-bottom: 4px; transition: border-color .2s, color .2s; }
+.link:hover { color: var(--accent); border-color: var(--accent); }
 
-/* Atmosphere */
-.aura { position: fixed; inset: 0; pointer-events: none; z-index: 0;
-  background: radial-gradient(60vw 50vw at 85% -10%, var(--glow-a), transparent 60%), radial-gradient(50vw 40vw at -10% 20%, var(--glow-c), transparent 60%), radial-gradient(60vw 50vw at 100% 110%, var(--glow-b), transparent 60%); }
-.grain { position: fixed; inset: 0; pointer-events: none; z-index: 60; opacity: 0.05; mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
-main, header, footer { position: relative; z-index: 1; }
+/* top bar */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 700 14px/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
+.brand img { width: 30px; height: auto; }
+.brand .it { color: var(--accent); }
+.mark-l { display: none; }
+:root[data-theme="light"] .mark-d { display: none; }
+:root[data-theme="light"] .mark-l { display: block; }
+.top-r { display: flex; align-items: center; gap: 10px; }
+.theme { display: inline-flex; border: 1px solid var(--line-2); border-radius: 999px; padding: 3px; }
+.theme button { border: 0; background: transparent; color: var(--mute); font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 8px 12px; border-radius: 999px; cursor: pointer; }
+.theme button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.top .btn { padding: 10px 16px; font-size: 14px; }
 
-/* Bar */
-.bar { position: sticky; top: 0; z-index: 40; padding-top: env(safe-area-inset-top, 0px); background: color-mix(in srgb, var(--bg) 72%, transparent); backdrop-filter: saturate(1.4) blur(14px); -webkit-backdrop-filter: saturate(1.4) blur(14px); border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent); }
-.bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
-.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
-.brand .bsm { width: 44px; height: auto; }
-.brand .word { font-size: 1rem; }
-.brand:hover .mk-a1 { animation: blink 900ms var(--ease) 1; } .brand:hover .mk-a2 { animation: blink 900ms var(--ease) 120ms 1; }
-.links { display: flex; align-items: center; gap: 24px; font-family: var(--display); font-weight: 600; font-size: 0.86rem; }
-.links a:not(.btn) { color: var(--ink-soft); text-decoration: none; transition: color 160ms var(--ease); }
-.links a:not(.btn):hover { color: var(--ink); }
-@media (max-width: 920px) { .links .hide-s { display: none; } }
-@media (max-width: 460px) { .brand .word { display: none; } .links { gap: 12px; } }
-.theme { width: 40px; height: 40px; border-radius: 999px; display: grid; place-items: center; cursor: pointer; background: var(--surface); color: var(--ink); border: 1px solid var(--line); transition: border-color 160ms var(--ease), transform 160ms var(--ease); }
-.theme:hover { border-color: var(--accent); } .theme:active { transform: scale(0.95); }
-.theme svg { width: 18px; height: 18px; } .theme .i-sun { display: none; }
-:root[data-theme="light"] .theme .i-sun { display: block; } :root[data-theme="light"] .theme .i-moon { display: none; }
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; white-space: nowrap; font-family: var(--display); font-weight: 700; font-size: 0.92rem; letter-spacing: 0.01em; background: var(--grad); color: var(--on-accent); text-decoration: none; padding: 14px 22px; border-radius: 999px; border: 0; cursor: pointer; box-shadow: 0 10px 30px -10px rgb(255 90 20 / 0.55), 0 1px 0 rgb(255 255 255 / 0.25) inset; transition: transform 160ms var(--ease), box-shadow 200ms var(--ease), filter 200ms var(--ease); }
-.btn:hover { transform: translateY(-1px); filter: brightness(1.06); }
-.btn:active { transform: translateY(1px); }
-.btn svg { width: 16px; height: 16px; }
-.btn.ghost { background: transparent; color: var(--ink); box-shadow: none; border: 1px solid var(--line-2); }
-.btn.ghost:hover { border-color: var(--accent); filter: none; }
-.links .btn { padding: 10px 16px; font-size: 0.82rem; }
+/* hero */
+.hero { border-top: 0; padding-block: clamp(40px, 7vw, 88px) clamp(56px, 8vw, 96px); }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+.hero-txt { display: grid; gap: 28px; min-width: 0; }
+.hero h1 { font: 400 clamp(52px, 7.6vw, 112px)/.96 var(--serif); letter-spacing: -.015em; }
+.hero h1 em { font-style: italic; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
+.facts { display: flex; flex-wrap: wrap; gap: 10px 28px; padding-top: 22px; border-top: 1px solid var(--line); }
+.facts span { font: 400 13px/1.4 var(--mono); color: var(--soft); }
+.facts span b { color: var(--ink); font-weight: 500; }
+.portrait { position: relative; margin: 0; }
+.portrait img { width: 100%; aspect-ratio: 840/975; object-fit: cover; border-radius: 4px; }
+.portrait figcaption { position: absolute; left: 14px; bottom: 12px; font: 400 11px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: rgba(238,233,224,.75); }
+.portrait .tag { position: absolute; right: -14px; top: 28px; background: var(--bg); border: 1px solid var(--line-2); padding: 12px 14px; display: grid; gap: 4px; border-radius: 4px; }
+.portrait .tag strong { font: 400 22px/1 var(--serif); }
+.portrait .tag span { font: 400 11px/1.2 var(--mono); color: var(--mute); letter-spacing: .08em; text-transform: uppercase; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--ok); margin-right: 6px; box-shadow: 0 0 0 0 var(--ok); animation: ping 2.2s infinite; }
+@keyframes ping { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--ok) 60%, transparent); } 80%, 100% { box-shadow: 0 0 0 9px transparent; } }
 
-/* Shared */
-.kicker { font-family: var(--display); font-size: 0.76rem; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--accent-2); }
-:root[data-theme="light"] .kicker { color: var(--accent); }
-.h2 { font-size: clamp(2rem, 1rem + 3.2vw, 3.4rem); line-height: 1.04; letter-spacing: -0.032em; font-weight: 800; margin-top: 14px; }
-.lead { margin-top: 20px; font-size: 1.12rem; color: var(--ink-soft); max-width: 60ch; }
-.cap { font-family: var(--display); font-size: 0.76rem; font-weight: 500; color: var(--ink-mute); margin-top: 14px; }
-.k { font-family: var(--display); font-size: 0.72rem; font-weight: 600; color: var(--ink-soft); letter-spacing: 0.02em; }
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 40px 80px -40px rgb(var(--shade) / 0.6); }
-.pill { font-family: var(--display); font-size: 0.64rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ok); display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
-.pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 4px color-mix(in srgb, var(--ok) 18%, transparent); }
-.case-no { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-family: var(--mono); font-size: 0.78rem; color: var(--ink-mute); letter-spacing: 0.04em; }
-.case-no b { white-space: nowrap; font-weight: 500; color: var(--accent-2); }
-:root[data-theme="light"] .case-no b { color: var(--accent); }
-.chips { display: flex; flex-wrap: wrap; gap: 8px; }
-.chips span { font-family: var(--display); font-size: 0.8rem; font-weight: 600; color: var(--ink); background: var(--surface); border: 1px solid var(--line-2); border-radius: 999px; padding: 8px 14px; }
+/* picker */
+.pick-q { font: 400 clamp(30px, 4vw, 48px)/1.15 var(--serif); display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.chip { border: 1px solid var(--line-2); background: transparent; color: var(--ink); border-radius: 999px; padding: 10px 16px; font: 500 15px/1 var(--sans); cursor: pointer; transition: all .2s; }
+.chip:hover { border-color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.pick-body { display: grid; grid-template-columns: 1fr 380px; gap: clamp(28px, 4vw, 64px); margin-top: 44px; align-items: start; }
+.pick-info { display: grid; gap: 28px; min-width: 0; }
+.pick-info .label { margin-bottom: 8px; }
+.pain { font: 400 clamp(24px, 2.6vw, 32px)/1.25 var(--serif); }
+.builds { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.builds li { display: grid; grid-template-columns: 34px 1fr; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.builds li span { font: 400 13px/1.6 var(--mono); color: var(--brass); }
+.pick-foot { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; }
+.phone { background: var(--raise); border: 1px solid var(--line-2); border-radius: 28px; padding: 14px; box-shadow: 0 30px 60px -30px rgba(0,0,0,.5); }
+.phone-top { display: flex; align-items: center; gap: 10px; padding: 6px 8px 14px; border-bottom: 1px solid var(--line); }
+.av { width: 34px; height: 34px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: grid; place-items: center; font: 600 13px/1 var(--sans); flex: none; }
+.phone-top b { display: block; font-size: 15px; font-weight: 600; }
+.phone-top small { font: 400 11px/1 var(--mono); color: var(--ok); }
+.chat { height: 360px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; padding: 14px 4px 4px; }
+.msg { max-width: 84%; padding: 9px 12px; border-radius: 14px; font-size: 14.5px; line-height: 1.45; animation: pop .35s ease both; }
+.msg.in { background: var(--bg-2); align-self: flex-start; border-bottom-left-radius: 4px; }
+.msg.out { background: color-mix(in srgb, var(--accent) 18%, var(--raise)); align-self: flex-end; border-bottom-right-radius: 4px; }
+.msg small { display: block; font: 400 10px/1.2 var(--mono); color: var(--mute); margin-top: 4px; text-align: right; }
+.typing { align-self: flex-end; display: flex; gap: 4px; padding: 12px 14px; background: color-mix(in srgb, var(--accent) 12%, var(--raise)); border-radius: 14px; }
+.typing i { width: 6px; height: 6px; border-radius: 50%; background: var(--mute); animation: blink 1s infinite; }
+.typing i:nth-child(2) { animation-delay: .15s; } .typing i:nth-child(3) { animation-delay: .3s; }
+@keyframes blink { 50% { opacity: .2; } }
+@keyframes pop { from { opacity: 0; transform: translateY(8px); } }
+.phone-note { font: 400 11px/1.4 var(--mono); color: var(--mute); text-align: center; padding: 10px 6px 2px; }
 
-/* Hero */
-.hero { padding-block: clamp(36px, 6vw, 84px) clamp(56px, 8vw, 104px); position: relative; overflow: clip; }
-.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
-.hero .tag { font-size: 0.76rem; display: inline-flex; align-items: center; gap: 12px; }
-.hero .tag::before { content: ""; width: 28px; height: 2px; background: var(--grad); border-radius: 2px; }
-.hero h1 { font-size: clamp(2.3rem, 1rem + 3.7vw, 4rem); line-height: 1.03; letter-spacing: -0.035em; font-weight: 800; margin-top: 22px; }
-.rot { display: inline-grid; vertical-align: bottom; }
-.rot > span { grid-area: 1 / 1; transition: opacity 400ms var(--ease), transform 500ms var(--ease); }
-.rot > span:not(.on) { opacity: 0; transform: translateY(0.35em); }
-.sub { font-size: clamp(1.06rem, 1rem + 0.4vw, 1.24rem); color: var(--ink-soft); max-width: 46ch; margin-top: 24px; line-height: 1.58; }
-.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
-.trust { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin-top: 34px; font-family: var(--display); font-size: 0.8rem; font-weight: 600; color: var(--ink-soft); }
-.trust > * { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
-.trust img { width: 34px; height: 34px; border-radius: 6px; }
-.trust a:hover { color: var(--ink); }
-.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 4px color-mix(in srgb, var(--ok) 18%, transparent); }
-.hero-mark { position: absolute; right: -8vw; top: -6vw; width: 46vw; max-width: 720px; opacity: 0.045; pointer-events: none; }
+/* statement */
+.statement { padding-block: clamp(90px, 14vw, 180px); }
+.statement p { font: 400 clamp(32px, 4.6vw, 62px)/1.18 var(--serif); max-width: 22ch; }
+.statement .w { opacity: .28; transition: opacity .25s; }
+.statement .w.on { opacity: 1; }
+.statement .w.hl.on { color: var(--accent); }
 
-/* Agent console */
-.console { position: relative; border-radius: 24px; overflow: hidden; }
-.console::before { content: ""; position: absolute; inset: -1px; border-radius: 24px; padding: 1px; background: linear-gradient(140deg, color-mix(in srgb, var(--accent) 70%, transparent), transparent 40%, transparent 60%, color-mix(in srgb, var(--accent-2) 50%, transparent)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
-.c-head { display: flex; align-items: center; gap: 12px; padding: 16px 18px; border-bottom: 1px solid var(--line); }
-.c-head .bsm { width: 34px; }
-.c-title { font-family: var(--display); font-weight: 700; font-size: 0.92rem; line-height: 1.2; }
-.c-title small { display: block; font-weight: 500; font-size: 0.72rem; color: var(--ink-soft); margin-top: 2px; }
-.c-live { margin-left: auto; }
-.tabs { display: flex; gap: 6px; padding: 12px 14px; border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; background: var(--bg-2); }
-.tabs::-webkit-scrollbar { display: none; }
-.tabs button { flex: none; font-family: var(--display); font-size: 0.76rem; font-weight: 600; color: var(--ink-soft); background: transparent; border: 1px solid transparent; border-radius: 999px; padding: 7px 12px; cursor: pointer; transition: color 160ms var(--ease), border-color 160ms var(--ease), background 160ms var(--ease); }
-.tabs button:hover { color: var(--ink); }
-.tabs button[aria-selected="true"] { color: var(--ink); background: var(--surface); border-color: var(--line-2); }
-.c-body { padding: 18px; min-height: 418px; display: flex; flex-direction: column; gap: 12px; }
-.c-biz { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-mute); display: flex; justify-content: space-between; gap: 10px; }
-.msg { max-width: 88%; padding: 11px 15px; border-radius: 18px; font-size: 0.96rem; line-height: 1.48; }
-.msg b { display: block; font-family: var(--display); font-weight: 700; font-size: 0.64rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 3px; }
-.msg.them { background: var(--surface-2); border: 1px solid var(--line); align-self: flex-start; border-bottom-left-radius: 6px; }
-.msg.them b { color: var(--ink-soft); }
-.msg.ai { background: var(--grad); color: var(--on-accent); align-self: flex-end; border-bottom-right-radius: 6px; }
-.msg.ai b { color: color-mix(in srgb, var(--on-accent) 70%, transparent); }
-.caret::after { content: ""; display: inline-block; width: 2px; height: 1em; margin-left: 2px; vertical-align: -0.15em; background: currentColor; animation: blink 900ms steps(1) infinite; }
-.think { align-self: stretch; border: 1px dashed var(--line-2); border-radius: 14px; padding: 10px 14px; font-family: var(--mono); font-size: 0.74rem; color: var(--ink-soft); display: flex; flex-direction: column; gap: 6px; }
-.think .ln { display: flex; gap: 10px; align-items: baseline; opacity: 0; transform: translateY(4px); transition: opacity 300ms var(--ease), transform 300ms var(--ease); }
-.think .ln.in { opacity: 1; transform: none; }
-.think .ln::before { content: "›"; color: var(--accent-2); }
-:root[data-theme="light"] .think .ln::before { color: var(--accent); }
-.think .ln.done::before { content: "✓"; color: var(--ok); }
-.acts { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
-.acts span { font-family: var(--display); font-size: 0.7rem; font-weight: 700; padding: 6px 11px; border-radius: 999px; color: var(--ok); border: 1px solid color-mix(in srgb, var(--ok) 40%, var(--line)); background: color-mix(in srgb, var(--ok) 9%, transparent); animation: pop 380ms var(--ease) both; }
-@keyframes pop { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: none; } }
-.fade-in { animation: rise 420ms var(--ease) both; }
-@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
-.c-foot { padding: 12px 18px; border-top: 1px solid var(--line); font-family: var(--display); font-size: 0.7rem; color: var(--ink-mute); display: flex; justify-content: space-between; gap: 12px; }
-.c-prog { height: 2px; background: var(--line); }
-.c-prog i { display: block; height: 100%; width: 0; background: var(--grad); }
-@media (max-width: 960px) { .hero .wrap { grid-template-columns: 1fr; } .console { max-width: 620px; } }
-@media (max-width: 520px) { .c-body { min-height: 460px; padding: 14px; } }
+/* cases */
+.case { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(32px, 5vw, 72px); padding-block: clamp(48px, 7vw, 88px); border-top: 1px solid var(--line); align-items: start; }
+.case:first-of-type { border-top: 0; padding-top: 0; }
+.case-txt { display: grid; gap: 22px; min-width: 0; position: sticky; top: 100px; }
+.case h3 { font: 400 clamp(34px, 4.4vw, 56px)/1.04 var(--serif); }
+.case .num { font: 400 13px/1 var(--mono); color: var(--brass); letter-spacing: .1em; }
+.case-links { display: flex; flex-wrap: wrap; gap: 14px 24px; }
+.demo { background: var(--bg-2); border: 1px solid var(--line); border-radius: 6px; padding: clamp(16px, 2.4vw, 26px); min-width: 0; display: grid; gap: 18px; }
+.demo-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.demo-note { font: 400 12px/1.5 var(--mono); color: var(--mute); }
+.try { font: 500 11px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
 
-/* Ticker */
-.ticker { border-block: 1px solid var(--line); background: color-mix(in srgb, var(--bg-2) 70%, transparent); overflow: hidden; }
-.track { display: flex; gap: 40px; width: max-content; padding-block: 18px; animation: slide 46s linear infinite; }
-.track span { display: inline-flex; align-items: center; gap: 40px; font-family: var(--display); font-weight: 700; font-size: clamp(0.95rem, 0.8rem + 0.6vw, 1.2rem); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); white-space: nowrap; }
-.track span::after { content: ""; width: 10px; height: 10px; background: var(--grad); clip-path: polygon(0 0, 100% 50%, 0 100%); transform: rotate(-45deg); }
-@keyframes slide { to { transform: translateX(-50%); } }
+/* stock demo */
+.units { border-top: 1px solid var(--line); }
+.unit { display: grid; grid-template-columns: 1fr auto auto; gap: 14px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.unit b { font-weight: 600; font-size: 15px; display: block; }
+.unit small { color: var(--mute); font-size: 13px; }
+.unit .rent { font: 500 14px/1 var(--mono); }
+.sw { position: relative; width: 46px; height: 26px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--bg); cursor: pointer; padding: 0; transition: background .2s; }
+.sw::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: var(--mute); transition: transform .2s, background .2s; }
+.sw[aria-checked="true"] { background: color-mix(in srgb, var(--ok) 25%, var(--bg)); }
+.sw[aria-checked="true"]::after { transform: translateX(20px); background: var(--ok); }
+.outs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.out { border: 1px solid var(--line); border-radius: 6px; padding: 12px; background: var(--bg); min-width: 0; transition: border-color .3s; }
+.out.flash { border-color: var(--ok); }
+.out .label { font-size: 10px; margin-bottom: 8px; display: flex; justify-content: space-between; }
+.out p { font-size: 13.5px; line-height: 1.45; }
+.out .big { font: 400 34px/1 var(--serif); }
+.mini { border: 1px solid var(--line-2); background: transparent; color: var(--ink); border-radius: 999px; padding: 8px 14px; font: 500 13px/1 var(--sans); cursor: pointer; }
+.mini:hover { border-color: var(--ink); }
 
-/* Mode toggle */
-.mode { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); }
-.mode button { display: inline-flex; align-items: center; gap: 7px; font-family: var(--display); font-size: 0.76rem; font-weight: 700; color: var(--ink-soft); background: transparent; border: 0; border-radius: 999px; padding: 7px 12px; cursor: pointer; transition: background 200ms var(--ease), color 200ms var(--ease); }
-.mode button svg { width: 15px; height: 15px; }
-.mode button[aria-pressed="true"] { background: var(--grad); color: var(--on-accent); }
-@media (max-width: 560px) { .mode button span { display: none; } .mode button { padding: 7px 9px; } }
-.svc { font-family: var(--display); font-size: 0.74rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); margin-top: 10px; }
+/* jack gallery */
+.gal-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.gal-chips .chip { padding: 8px 13px; font-size: 13.5px; }
+.gal { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.gal figure { margin: 0; position: relative; overflow: hidden; border-radius: 4px; transition: opacity .3s, transform .3s; }
+.gal img { width: 100%; aspect-ratio: 4/3; object-fit: cover; transition: transform .5s; }
+.gal figure:hover img { transform: scale(1.06); }
+.gal figcaption { position: absolute; left: 8px; bottom: 6px; font: 500 10px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,.7); }
+.gal figure.dim { opacity: .18; transform: scale(.97); }
+.jack-shot { border-radius: 4px; border: 1px solid var(--line); }
 
-/* Switchboard */
-.board-sec { padding-block: clamp(36px, 5vw, 56px); border-block: 1px solid var(--line); background: color-mix(in srgb, var(--bg-2) 70%, transparent); }
-.board-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; }
-.board-line { font-family: var(--display); font-weight: 800; font-size: clamp(1.1rem, 0.9rem + 0.8vw, 1.5rem); letter-spacing: -0.015em; }
-.board-stat { margin-left: auto; font-family: var(--mono); font-size: 0.74rem; color: var(--ink-mute); }
-.board-stat b { color: var(--ok); font-weight: 500; }
-.board { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-top: 22px; }
-.line { position: relative; text-align: left; display: grid; grid-template-columns: 14px minmax(0, 1fr); column-gap: 10px; row-gap: 4px; align-items: center; padding: 14px 14px 12px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); cursor: pointer; font: inherit; transition: border-color 260ms var(--ease), transform 200ms var(--ease), box-shadow 260ms var(--ease); }
-.line:hover { transform: translateY(-2px); border-color: var(--line-2); }
-.jack { width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--line-2); transition: background 200ms var(--ease), border-color 200ms var(--ease); }
-.ln-name { font-family: var(--display); font-weight: 700; font-size: 0.88rem; }
-.ln-q { grid-column: 2; font-size: 0.8rem; color: var(--ink-soft); line-height: 1.35; min-height: 2.7em; }
-.ln-st { grid-column: 2; font-family: var(--mono); font-size: 0.66rem; color: var(--ink-mute); }
-.line.ring { border-color: color-mix(in srgb, var(--accent) 70%, var(--line)); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent); }
-.line.ring .jack { background: var(--accent); border-color: var(--accent); animation: ringjack 520ms ease-in-out infinite; }
-.line.ring .ln-st { color: var(--accent); }
-.line.ok { border-color: color-mix(in srgb, var(--ok) 55%, var(--line)); }
-.line.ok .jack { background: var(--ok); border-color: var(--ok); }
-.line.ok .ln-st { color: var(--ok); }
-@keyframes ringjack { 0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 50%, transparent); } 50% { transform: scale(1.15); box-shadow: 0 0 0 6px transparent; } }
-@media (max-width: 1000px) { .board { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-@media (max-width: 600px) { .board { grid-template-columns: repeat(2, minmax(0, 1fr)); } .board-stat { margin-left: 0; } .ln-q { display: none; } }
+/* leads demo */
+.lead-row { display: grid; grid-template-columns: 1fr 120px 70px; gap: 14px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.lead-row b { font-weight: 600; font-size: 15px; display: block; }
+.lead-row small { color: var(--mute); font-size: 13px; }
+.bar { height: 6px; background: var(--line); border-radius: 99px; overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--brass); border-radius: 99px; transition: width .8s; }
+.lead-row.hot .bar i { background: var(--ok); }
+.state { font: 500 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; text-align: right; color: var(--mute); }
+.lead-row.sent .state { color: var(--ok); }
+.allow { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding-top: 6px; }
+.allow span { font-size: 14.5px; }
+.stats3 { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.stats3 div { padding: 12px 0; }
+.stats3 strong { font: 400 34px/1 var(--serif); display: block; font-variant-numeric: tabular-nums; }
+.stats3 span { font: 400 11px/1.3 var(--mono); color: var(--mute); text-transform: uppercase; letter-spacing: .08em; }
 
-/* Live ops video */
-.ops { padding-block: calc(var(--section) * 0.6); }
-.ops-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
-.ops video { width: 100%; aspect-ratio: 1 / 1; border-radius: 24px; border: 1px solid var(--line); background: #0B1020; display: block; box-shadow: 0 40px 80px -40px rgb(var(--shade) / 0.7); }
-@media (max-width: 860px) { .ops-grid { grid-template-columns: 1fr; } .ops video { max-width: 520px; } }
+/* clients */
+.clients-top { display: grid; grid-template-columns: auto 1fr; gap: clamp(24px, 4vw, 60px); align-items: end; margin-bottom: 40px; }
+.huge { font: 400 clamp(140px, 22vw, 280px)/.78 var(--serif); color: var(--accent); font-variant-numeric: tabular-nums; }
+.crow { display: grid; grid-template-columns: 1.1fr .9fr 1.4fr; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--line); align-items: baseline; transition: padding .25s; }
+.crow:first-child { border-top: 1px solid var(--line); }
+.crow:hover { padding-left: 10px; }
+.crow b { font: 400 clamp(22px, 2.4vw, 30px)/1.1 var(--serif); }
+.crow span { font: 400 13px/1.4 var(--mono); color: var(--mute); }
+.crow p { color: var(--soft); font-size: 15.5px; }
+.more { padding-top: 18px; font: 400 13px/1.4 var(--mono); color: var(--mute); }
 
-/* Capabilities */
-.caps { padding-block: var(--section) calc(var(--section) * 0.6); }
-.cap-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: clamp(40px, 6vw, 64px); }
-.cap-card { padding: 26px 24px 28px; position: relative; overflow: hidden; transition: transform 260ms var(--ease), border-color 260ms var(--ease); }
-.cap-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); }
-.ico { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: color-mix(in srgb, var(--accent) 14%, var(--surface)); color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line)); }
-.ico svg { width: 24px; height: 24px; }
-.cap-card h3 { font-size: 1.15rem; font-weight: 700; margin-top: 20px; letter-spacing: -0.01em; }
-.cap-card p { margin-top: 10px; color: var(--ink-soft); font-size: 0.97rem; }
-.cap-card .eg { margin-top: 16px; font-family: var(--mono); font-size: 0.7rem; color: var(--ink-mute); }
-@media (max-width: 1000px) { .cap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .cap-grid { grid-template-columns: 1fr; } }
+/* about */
+.about { padding-block: 0 clamp(72px, 10vw, 128px); }
+.about-photo { position: relative; height: clamp(320px, 52vw, 640px); overflow: hidden; }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+.about-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 45%, var(--bg) 100%); }
+.about-photo .label { position: absolute; right: max(20px, env(safe-area-inset-right, 0px)); top: 18px; z-index: 1; color: rgba(238,233,224,.8); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 80px); margin-top: -40px; position: relative; z-index: 1; }
+.about-grid h2 em { font-style: italic; }
+.story { display: grid; gap: 18px; color: var(--soft); max-width: 58ch; }
+.story strong { color: var(--ink); font-weight: 600; }
 
-/* Case 01: RISKPROP */
-.case { padding-block: var(--section); }
-.case-1 { background: color-mix(in srgb, var(--bg-2) 85%, transparent); border-block: 1px solid var(--line); }
-.case-head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(24px, 5vw, 72px); align-items: end; }
-.case-head .lead { margin-top: 0; }
-@media (max-width: 900px) { .case-head { grid-template-columns: 1fr; } }
+/* steps */
+.steps { position: relative; display: grid; gap: 0; padding-left: 56px; }
+.steps svg { position: absolute; left: 14px; top: 8px; height: calc(100% - 16px); width: 4px; overflow: visible; }
+.steps .track { stroke: var(--line-2); }
+.steps .draw { stroke: var(--accent); }
+.step { position: relative; padding: 0 0 44px; display: grid; gap: 8px; }
+.step:last-child { padding-bottom: 0; }
+.step::before { content: ""; position: absolute; left: -48px; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 2px solid var(--line-2); transition: border-color .3s, background .3s; }
+.step.on::before { border-color: var(--accent); background: var(--accent); }
+.step h3 { font: 400 clamp(28px, 3vw, 38px)/1.1 var(--serif); }
+.step p { color: var(--soft); max-width: 52ch; }
+.step .label { color: var(--brass); }
+.how-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(28px, 5vw, 80px); }
 
-.sync { display: grid; grid-template-columns: minmax(0, 1.05fr) 150px minmax(0, 1fr); gap: 0; align-items: stretch; margin-top: clamp(40px, 6vw, 64px); }
-.sm { padding: 20px; }
-.sm-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-.sm-title { font-family: var(--display); font-weight: 800; font-size: 1.05rem; }
-.sm-title small { display: block; font-weight: 500; font-size: 0.74rem; color: var(--ink-soft); }
-.raise { font-family: var(--display); font-size: 0.76rem; font-weight: 700; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line-2); border-radius: 999px; padding: 8px 14px; cursor: pointer; transition: border-color 160ms var(--ease); }
-.raise:hover { border-color: var(--accent); }
-.raise[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
-.units { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-.unit { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto auto; gap: 12px; align-items: center; padding: 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg-2); transition: border-color 200ms var(--ease), opacity 200ms var(--ease); }
-.unit.let { opacity: 0.6; }
-.u-badge { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 0.86rem; color: var(--on-accent); background: var(--grad); }
-.unit.let .u-badge { background: var(--line-2); color: var(--ink-soft); }
-.u-name { font-family: var(--display); font-weight: 700; font-size: 0.9rem; min-width: 0; }
-.u-name small { display: block; font-weight: 500; font-size: 0.72rem; color: var(--ink-soft); }
-.u-rent { font-family: var(--display); font-weight: 800; font-size: 0.92rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.u-rent.bump { color: var(--accent); }
-.tog { width: 46px; height: 26px; border-radius: 26px; border: 0; background: var(--ok); position: relative; cursor: pointer; flex: none; transition: background 200ms var(--ease); }
-.tog::after { content: ""; position: absolute; top: 3px; left: 23px; width: 20px; height: 20px; border-radius: 50%; background: #fff; transition: left 200ms var(--ease); box-shadow: 0 1px 3px rgb(0 0 0 / 0.3); }
-.tog[aria-pressed="false"] { background: var(--line-2); }
-.tog[aria-pressed="false"]::after { left: 3px; }
-.sm-hint { margin-top: 14px; font-family: var(--display); font-size: 0.74rem; color: var(--ink-mute); display: flex; gap: 8px; align-items: center; }
-.sm-hint::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent-2); animation: blink 1.6s ease-in-out infinite; }
+/* creds */
+.creds-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 80px); align-items: start; }
+.cert { display: grid; grid-template-columns: 96px 1fr; gap: 20px; align-items: center; padding: 22px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.cert img { width: 96px; height: 96px; object-fit: contain; }
+.cert b { font: 400 26px/1.1 var(--serif); display: block; margin-bottom: 6px; }
+.cert span { font: 400 13px/1.5 var(--mono); color: var(--mute); display: block; margin-bottom: 10px; }
+.tools { display: flex; flex-wrap: wrap; gap: 8px; }
+.tools span { border: 1px solid var(--line-2); border-radius: 999px; padding: 8px 14px; font: 400 13px/1 var(--mono); color: var(--soft); }
 
-.audit { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--line-2); }
-.audit ol { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 0.86rem; }
-.audit li { display: flex; justify-content: space-between; gap: 12px; color: var(--ink-soft); }
-.audit li.new { color: var(--ink); animation: rise 360ms var(--ease) both; }
-.audit li.new span::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); margin-right: 8px; vertical-align: 0.1em; }
-.audit time { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-mute); white-space: nowrap; }
-.wire { position: relative; display: grid; place-items: center; }
-.wire svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-.wire path { fill: none; stroke: var(--line-2); stroke-width: 2; }
-.wire path.flow { stroke: url(#flowg); stroke-width: 3; stroke-dasharray: 30 400; stroke-dashoffset: 430; opacity: 0; }
-.sync.firing .wire path.flow { animation: flow 900ms var(--ease) forwards; }
-@keyframes flow { 0% { opacity: 1; stroke-dashoffset: 430; } 100% { opacity: 1; stroke-dashoffset: 0; } }
-.db { position: relative; z-index: 1; width: 108px; padding: 14px 10px; border-radius: 18px; text-align: center; background: var(--surface); border: 1px solid var(--line-2); box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 8%, transparent), 0 20px 40px -20px rgb(var(--shade) / 0.6); font-family: var(--display); }
-.db svg { position: static; width: 30px; height: 30px; color: var(--accent); margin: 0 auto; display: block; }
-.db b { display: block; font-size: 0.78rem; margin-top: 8px; line-height: 1.2; }
-.db small { display: block; font-size: 0.64rem; color: var(--ink-mute); margin-top: 4px; }
-.sync.firing .db { animation: ping-db 900ms var(--ease); }
-@keyframes ping-db { 30% { box-shadow: 0 0 0 14px color-mix(in srgb, var(--accent) 22%, transparent), 0 20px 40px -20px rgb(var(--shade) / 0.6); } }
+/* contact */
+.contact { text-align: left; padding-bottom: 150px; }
+.contact h2 { font-size: clamp(72px, 13vw, 180px); line-height: .9; }
+.contact h2 em { font-style: italic; }
+.contact-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: clamp(28px, 5vw, 80px); align-items: end; margin-top: 36px; }
+.reach { border-top: 1px solid var(--line); }
+.reach div { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 0; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.reach .label { font-size: 11px; }
+.reach a, .reach code { font: 400 15px/1.3 var(--mono); text-decoration: none; color: var(--ink); }
+.reach a:hover { color: var(--accent); }
+.copy { border: 0; background: transparent; color: var(--mute); font: 500 11px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; cursor: pointer; padding: 4px 0; }
+.copy:hover { color: var(--accent); }
+footer { border-top: 1px solid var(--line); padding-block: 28px 110px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font: 400 12px/1.5 var(--mono); color: var(--mute); }
 
-.outs { display: flex; flex-direction: column; gap: 12px; }
-.out { padding: 16px 18px; transition: border-color 300ms var(--ease); }
-.out.hit { border-color: color-mix(in srgb, var(--accent) 70%, var(--line)); }
-.out-h { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-family: var(--display); font-weight: 700; font-size: 0.86rem; }
-.out-h .k { font-weight: 600; }
-.stamp { font-family: var(--mono); font-size: 0.66rem; color: var(--ink-mute); }
-.out .msg { font-size: 0.88rem; max-width: 100%; margin-top: 10px; }
-.out .msg.them { margin-top: 12px; }
-.w-list, .ad-list { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-family: var(--display); font-size: 0.8rem; }
-.w-list li, .ad-list li { display: flex; justify-content: space-between; gap: 10px; padding: 7px 10px; border-radius: 10px; background: var(--bg-2); border: 1px solid var(--line); font-variant-numeric: tabular-nums; }
-.w-list li b, .ad-list li b { font-weight: 700; }
-.st-live { color: var(--ok); font-weight: 700; }
-.st-off { color: var(--ink-mute); font-weight: 700; }
-.w-empty { color: var(--ink-mute); font-size: 0.8rem; }
-@media (max-width: 1000px) {
-  .sync { grid-template-columns: minmax(0, 1fr); }
-  .wire { height: 120px; }
+/* floating pill nav */
+.pill { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 55; display: flex; gap: 2px; padding: 5px; border-radius: 999px; background: color-mix(in srgb, var(--raise) 88%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid var(--line-2); box-shadow: 0 16px 40px -18px rgba(0,0,0,.55); max-width: calc(100vw - 24px); overflow-x: auto; scrollbar-width: none; }
+.pill a { text-decoration: none; padding: 10px 14px; border-radius: 999px; font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--soft); white-space: nowrap; transition: background .2s, color .2s; }
+.pill a.on { background: var(--ink); color: var(--bg); }
+.pill a.wa { color: var(--accent); }
+
+/* responsive */
+@media (max-width: 960px) {
+  .hero .wrap, .case, .about-grid, .how-grid, .creds-grid, .contact-grid { grid-template-columns: 1fr; }
+  .pick-body { grid-template-columns: 1fr; }
+  .phone { max-width: 400px; }
+  .case-txt { position: static; }
+  .portrait { max-width: 520px; }
+  .portrait .tag { right: 10px; }
+  .about-grid { margin-top: 0; }
 }
-
-.built { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-top: clamp(48px, 7vw, 80px); }
-.bcard { padding: 20px; }
-.bcard h3 { font-size: 1rem; font-weight: 700; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
-.bcard p { margin-top: 8px; color: var(--ink-soft); font-size: 0.92rem; }
-@media (max-width: 1100px) { .built { grid-template-columns: repeat(2, minmax(0, 1fr)); } .built .bcard:first-child { grid-column: 1 / -1; } }
-@media (max-width: 560px) { .built { grid-template-columns: 1fr; } }
-.bcard.hero-b { background: radial-gradient(120% 120% at 100% 0%, var(--glow-a), transparent 60%), var(--surface); }
-
-.proof { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(28px, 5vw, 64px); align-items: center; margin-top: clamp(56px, 8vw, 96px); }
-.proof h3 { font-size: clamp(1.4rem, 1rem + 1.2vw, 1.9rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
-.proof p { margin-top: 14px; color: var(--ink-soft); }
-.inbox { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); overflow: hidden; border-radius: 24px; }
-.threads { list-style: none; margin: 0; padding: 10px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 4px; background: var(--bg-2); }
-.t { display: flex; gap: 12px; align-items: center; padding: 11px; border-radius: 14px; min-width: 0; }
-.t.on { background: var(--surface); border: 1px solid var(--line); }
-.av { width: 38px; height: 38px; border-radius: 50%; flex: none; display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 0.74rem; color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, var(--surface)); border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--line)); }
-.tm { min-width: 0; }
-.tn { font-family: var(--display); font-weight: 700; font-size: 0.86rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.tp { font-size: 0.78rem; color: var(--ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
-.chip { font-family: var(--display); font-size: 0.6rem; font-weight: 700; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--line-2); color: var(--ink-soft); }
-.chip.ok { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 40%, var(--line)); background: color-mix(in srgb, var(--ok) 10%, transparent); }
-.thread { display: flex; flex-direction: column; gap: 10px; padding: 16px; min-width: 0; }
-.thread .msg { font-size: 0.88rem; }
-@media (max-width: 900px) { .proof { grid-template-columns: 1fr; } }
-@media (max-width: 640px) { .inbox { grid-template-columns: minmax(0, 1fr); } .threads { border-right: 0; border-bottom: 1px solid var(--line); } .threads .t:nth-child(n+3) { display: none; } }
-
-/* Case 02: Jack */
-.jack-case { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: clamp(32px, 5vw, 72px); align-items: center; margin-top: clamp(40px, 6vw, 64px); }
-.shots { position: relative; padding-bottom: 40px; }
-.browser { overflow: hidden; border-radius: 16px; }
-.browser-bar { display: flex; align-items: center; gap: 8px; padding: 11px 14px; border-bottom: 1px solid var(--line); background: var(--surface-2); }
-.browser-bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line-2); }
-.browser-bar .url { margin-left: 10px; flex: 1; min-width: 0; font-family: var(--mono); font-size: 0.7rem; color: var(--ink-soft); background: var(--bg-2); border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.browser img { width: 100%; aspect-ratio: 1280 / 672; object-fit: cover; }
-.handset { position: absolute; right: -14px; bottom: 0; width: 26%; min-width: 120px; border-radius: 26px; padding: 7px; background: #0A0A0D; border: 1px solid var(--line-2); box-shadow: 0 40px 70px -30px rgb(0 0 0 / 0.7); }
-.handset img { border-radius: 20px; width: 100%; aspect-ratio: 600 / 1180; object-fit: cover; object-position: top; }
-.jack-case h3 { font-size: clamp(1.5rem, 1rem + 1.6vw, 2.1rem); line-height: 1.1; letter-spacing: -0.025em; font-weight: 800; }
-.ticks { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 10px; }
-.ticks li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.98rem; }
-.ticks li::before { content: ""; flex: none; width: 20px; height: 20px; margin-top: 2px; border-radius: 50%; background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M6.5 12.5l3.5 3.5L17.5 8.5' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>") center / 14px no-repeat, var(--grad); }
-@media (max-width: 900px) { .jack-case { grid-template-columns: 1fr; } .handset { right: 4px; width: 30%; } }
-
-.wall { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: clamp(40px, 6vw, 64px); }
-.wall figure { margin: 0; position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
-.wall img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform 600ms var(--ease); }
-.wall figure:hover img { transform: scale(1.05); }
-.wall figcaption { position: absolute; left: 10px; bottom: 10px; font-family: var(--display); font-size: 0.68rem; font-weight: 700; color: #fff; background: rgb(10 10 14 / 0.62); backdrop-filter: blur(6px); padding: 5px 10px; border-radius: 999px; }
-@media (max-width: 760px) { .wall { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-
-.fits { margin-top: clamp(48px, 7vw, 80px); display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(24px, 4vw, 56px); align-items: center; padding: clamp(24px, 4vw, 40px); }
-.fits h3 { font-size: clamp(1.4rem, 1rem + 1.2vw, 1.9rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
-.fits p { margin-top: 10px; color: var(--ink-soft); }
-@media (max-width: 860px) { .fits { grid-template-columns: 1fr; } }
-
-/* Your business tool */
-.yours { padding-block: var(--section); }
-.yours-card { position: relative; border-radius: 32px; padding: clamp(32px, 6vw, 80px) clamp(20px, 5vw, 72px); overflow: hidden; background: radial-gradient(80% 70% at 100% 0%, var(--glow-a), transparent 60%), radial-gradient(70% 60% at 0% 100%, var(--glow-b), transparent 60%), var(--surface); border: 1px solid var(--line); }
-.yours-in { position: relative; max-width: 760px; margin: 0 auto; text-align: center; }
-.yours-in .lead { margin-inline: auto; }
-.ask { margin: 40px auto 0; max-width: 640px; text-align: left; position: relative; }
-.ask label { display: block; font-family: var(--display); font-size: 0.82rem; font-weight: 600; color: var(--ink-soft); margin-bottom: 10px; }
-.ask input { width: 100%; font: inherit; font-family: var(--display); font-size: clamp(1rem, 0.95rem + 0.8vw, 1.45rem); font-weight: 600; color: var(--ink); background: var(--bg); caret-color: var(--accent); border: 1px solid var(--line-2); border-radius: 16px; padding: 18px 20px; transition: border-color 160ms var(--ease), box-shadow 160ms var(--ease); }
-.ask input::placeholder { color: var(--ink-mute); }
-.ask input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 20%, transparent); }
-.picks { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.picks button { font-family: var(--display); font-size: 0.82rem; font-weight: 600; color: var(--ink-soft); background: transparent; border: 1px solid var(--line-2); border-radius: 999px; padding: 8px 14px; cursor: pointer; transition: border-color 140ms var(--ease), color 140ms var(--ease); }
-.picks button:hover { border-color: var(--accent); color: var(--ink); }
-.answer { position: relative; margin: 32px auto 0; max-width: 640px; text-align: left; border-top: 1px solid var(--line); padding-top: 26px; min-height: 220px; }
-.answer .said { font-family: var(--display); font-size: 0.82rem; font-weight: 700; color: var(--accent); }
-.answer h3 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.015em; margin-top: 6px; }
-.answer ul { margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
-.answer li { padding-left: 24px; position: relative; }
-.answer li::before { content: ""; position: absolute; left: 0; top: 0.5em; width: 10px; height: 10px; background: var(--grad); clip-path: polygon(0 0, 100% 50%, 0 100%); transform: rotate(-45deg); }
-.answer .fine { margin-top: 22px; font-size: 0.92rem; color: var(--ink-mute); }
-.answer.swap > * { animation: rise 360ms var(--ease) both; }
-
-/* Brand case */
-.brand-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-auto-rows: minmax(150px, auto); gap: 14px; margin-top: clamp(40px, 6vw, 64px); }
-.tile { border-radius: 22px; border: 1px solid var(--line); overflow: hidden; position: relative; display: grid; place-items: center; padding: 28px; }
-.tile .note { position: absolute; left: 16px; bottom: 14px; font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.02em; }
-.t-main { grid-column: span 4; grid-row: span 2; background: radial-gradient(70% 90% at 20% 0%, rgb(30 60 140 / 0.35), transparent 60%), radial-gradient(70% 90% at 100% 100%, rgb(140 20 30 / 0.35), transparent 60%), #0B0C11; }
-.t-main .lock { display: flex; align-items: center; gap: clamp(18px, 3vw, 40px); }
-.t-main .bsm { width: clamp(96px, 14vw, 170px); }
-.t-main .word { font-size: clamp(1.6rem, 1rem + 2.6vw, 3.2rem); line-height: 1.02; color: #F4F5F8; white-space: normal; }
-.t-main .word i { color: #FF5722; }
-.t-main .tag { font-size: clamp(0.56rem, 0.5rem + 0.3vw, 0.8rem); margin-top: 12px; display: block; color: #FFB300; }
-.t-main .note { color: #6E7385; }
-.t-cream { grid-column: span 2; background: #FAF8F4; } .t-cream .note { color: #8A909C; }
-.t-white { grid-column: span 2; background: linear-gradient(135deg, #FF4A00, #FF9A00); } .t-white .note { color: rgb(255 255 255 / 0.8); }
-.t-cream img, .t-white img { width: 52%; }
-.t-icon { grid-column: span 2; background: var(--bg-2); } .t-icon img { width: 44%; border-radius: 24%; box-shadow: 0 20px 40px -18px rgb(0 0 0 / 0.7); } .t-icon .note { color: var(--ink-mute); } .t-icon img { outline: 1px solid var(--line-2); }
-.t-sw { grid-column: span 2; display: grid; grid-template-columns: repeat(3, 1fr); padding: 0; place-items: stretch; }
-.sw { display: flex; align-items: flex-end; padding: 12px; font-family: var(--mono); font-size: 0.64rem; min-height: 80px; }
-@media (max-width: 520px) { .sw { font-size: 0.56rem; padding: 8px; } }
-.t-type { grid-column: span 2; background: var(--surface); place-items: start; align-content: center; }
-.t-type .aa { font-family: var(--display); font-weight: 800; font-size: clamp(3rem, 2rem + 3vw, 4.6rem); line-height: 1; letter-spacing: -0.03em; }
-.t-type .nm { font-family: var(--display); font-weight: 700; font-size: 0.95rem; margin-top: 10px; }
-.t-type .tr { font-family: var(--display); font-weight: 600; font-size: 0.66rem; letter-spacing: 0.34em; text-transform: uppercase; color: var(--ink-soft); margin-top: 6px; }
-@media (max-width: 1000px) { .brand-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .t-main { grid-column: 1 / -1; grid-row: auto; min-height: 280px; } .t-cream, .t-white, .t-icon, .t-sw, .t-type { grid-column: span 1; } }
-@media (max-width: 520px) { .t-main .lock { flex-direction: column; text-align: center; } }
-
-/* Credentials */
-.creds { padding-block: var(--section) calc(var(--section) * 0.6); }
-.cred-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: center; margin-top: clamp(32px, 5vw, 56px); }
-.cred { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; align-items: center; padding: 24px; }
-.cred img { width: 150px; height: 150px; border-radius: 14px; }
-.cred h3 { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.015em; line-height: 1.15; }
-.cred .by { font-family: var(--display); font-size: 0.84rem; font-weight: 600; color: var(--ink-soft); margin-top: 6px; }
-.cred .cta { margin-top: 18px; }
-.cred .btn { padding: 11px 18px; font-size: 0.84rem; }
-.stack { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-.stack span { font-family: var(--mono); font-size: 0.78rem; color: var(--ink); padding: 9px 14px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--surface); }
-@media (max-width: 900px) { .cred-grid { grid-template-columns: 1fr; } }
-@media (max-width: 520px) { .cred { grid-template-columns: 1fr; } }
-
-/* How */
-.how { padding-block: calc(var(--section) * 0.6) var(--section); }
-.how-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: clamp(40px, 6vw, 64px); }
-.hcard { padding: 26px 24px 28px; position: relative; overflow: hidden; }
-.hcard::after { content: ""; position: absolute; right: -40px; top: -40px; width: 140px; height: 140px; border-radius: 50%; border: 2px solid var(--accent-2); opacity: 0.12; box-shadow: 0 0 0 22px color-mix(in srgb, var(--accent-2) 4%, transparent); }
-.hcard .n { font-family: var(--display); font-weight: 800; font-size: 2.6rem; letter-spacing: -0.04em; line-height: 1; }
-.hcard h3 { font-size: 1.15rem; font-weight: 700; margin-top: 22px; }
-.hcard p { margin-top: 10px; color: var(--ink-soft); font-size: 0.98rem; }
-@media (max-width: 980px) { .how-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 560px) { .how-grid { grid-template-columns: 1fr; } }
-
-/* Close */
-.close { padding-block: var(--section) clamp(56px, 7vw, 96px); border-top: 1px solid var(--line); }
-.close .wrap { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(32px, 5vw, 80px); align-items: end; }
-.close h2 { font-size: clamp(2.5rem, 1rem + 5.4vw, 5.4rem); line-height: 0.98; letter-spacing: -0.045em; font-weight: 800; max-width: 11ch; margin-top: 14px; }
-.close .lead { max-width: 44ch; }
-.reach { padding: 8px 24px; }
-.reach .r { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--line); min-width: 0; }
-.reach .r:last-child { border-bottom: 0; }
-.reach .v { font-family: var(--display); font-weight: 700; font-size: 1.04rem; margin-top: 2px; overflow-wrap: anywhere; color: var(--ink); }
-.reach a.v { text-decoration: none; } .reach a.v:hover { color: var(--accent); }
-.reach .l { min-width: 0; }
-.copy { flex: none; font-family: var(--display); font-size: 0.76rem; font-weight: 700; color: var(--ink); background: transparent; border: 1px solid var(--line-2); border-radius: 999px; padding: 7px 14px; cursor: pointer; }
-.copy:hover, .copy.done { border-color: var(--accent); color: var(--accent); }
-@media (max-width: 900px) { .close .wrap { grid-template-columns: 1fr; } }
-
-footer { border-top: 1px solid var(--line); }
-.foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding-block: 40px 44px; }
-.lockup { display: flex; align-items: center; gap: 18px; }
-.lockup .bsm { width: 64px; }
-.lockup .word { font-size: 1.35rem; line-height: 1.1; }
-.lockup .tag { font-size: 0.62rem; margin-top: 6px; display: block; }
-.foot .meta { font-family: var(--display); font-size: 0.8rem; color: var(--ink-mute); text-align: right; line-height: 1.7; }
-@media (max-width: 640px) { .foot .meta { text-align: left; } }
-
-.rv { opacity: 0; transform: translateY(22px); transition: opacity 800ms var(--ease), transform 800ms var(--ease); }
-.rv.in { opacity: 1; transform: none; }
-.no-io .rv { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .rv { opacity: 1; transform: none; } }
-
-/* Lead Engine case */
-.le-case { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 72px); align-items: center; margin-top: clamp(40px, 6vw, 64px); }
-.le-case h3 { font-size: clamp(1.5rem, 1rem + 1.6vw, 2.1rem); line-height: 1.1; letter-spacing: -0.025em; font-weight: 800; }
-.le-app { overflow: hidden; border-radius: 16px; }
-.le-body { padding: clamp(14px, 2.4vw, 22px); display: grid; gap: 14px; }
-.le-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-.le-title { font-family: var(--display); font-weight: 800; font-size: 1rem; letter-spacing: -0.01em; }
-.le-title small { display: block; font-family: var(--text); font-weight: 500; font-size: 0.74rem; color: var(--ink-mute); }
-.le-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
-.le-stat { background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
-.le-stat b { display: block; font-family: var(--display); font-size: 1.3rem; font-weight: 800; }
-.le-stat span { font-size: 0.72rem; color: var(--ink-mute); }
-.le-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-.le-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 12px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-2); }
-.le-row .n { font-weight: 700; font-size: 0.9rem; line-height: 1.25; }
-.le-row .w { font-size: 0.74rem; color: var(--ink-mute); }
-.le-score { font-family: var(--mono); font-size: 0.78rem; font-weight: 700; padding: 4px 9px; border-radius: 999px; color: var(--on-accent); background: var(--grad); }
-.le-score.mid { background: var(--surface-2); color: var(--ink-soft); border: 1px solid var(--line-2); }
-.le-gate { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px; border: 1px dashed var(--line-2); border-radius: 12px; font-size: 0.82rem; color: var(--ink-soft); }
-.le-tog { width: 38px; height: 22px; border-radius: 999px; background: var(--ok); position: relative; flex: none; }
-.le-tog::after { content: ""; position: absolute; top: 3px; right: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; }
-.le-clients { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
-.le-clients span { font-family: var(--display); font-size: 0.74rem; font-weight: 700; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line-2); color: var(--ink); }
-@media (max-width: 900px) { .le-case { grid-template-columns: 1fr; } .le-case .le-shot { order: 2; } }
-@media (max-width: 520px) { .le-row { grid-template-columns: minmax(0, 1fr) auto; } .le-row .chip { display: none; } .le-stat b { font-size: 1.1rem; } }
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .top .btn { display: none; }
+  .outs { grid-template-columns: 1fr; }
+  .gal { grid-template-columns: repeat(2, 1fr); }
+  .crow { grid-template-columns: 1fr; gap: 4px; }
+  .clients-top { grid-template-columns: 1fr; }
+  .lead-row { grid-template-columns: 1fr 64px; }
+  .lead-row .bar { display: none; }
+  .brand span.name { display: none; }
+  .pill a { padding: 9px 10px; font-size: 11px; letter-spacing: .04em; }
+  .pill a[data-s="build"] { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+  .statement .w { opacity: 1; }
+}
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="bsg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF4A00"/><stop offset="1" stop-color="#FF9A00"/></linearGradient><linearGradient id="bsl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C4161C"/><stop offset="1" stop-color="#F0541E"/></linearGradient></defs><symbol id="mk-b" viewBox="436 116 740 624"><g transform="scale(0.25) translate(0,4680) scale(1,-1)"><path d="M1896 4166 c-1 -2 -2 -2 -14 -2 -12 0 -13 0 -14 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -1 -2 -2 -4 -2 -3 0 -32 -29 -32 -32 0 -2 -2 -4 -4 -6 -3 -2 -4 -4 -4 -6 0 -2 -1 -3 -2 -4 -2 -1 -2 -2 -2 -6 0 -4 0 -5 -2 -6 -2 -1 -2 -2 -2 -8 0 -6 0 -7 -2 -8 -2 -1 -2 -2 -2 -1019 0 -684 0 -1017 1 -1017 1 0 52 51 114 113 l113 113 0 293 1 293 5 0 c4 0 5 0 6 -2 1 -2 2 -2 22 -2 20 0 21 0 22 -2 1 -2 2 -2 22 -2 20 0 21 0 22 -2 1 -2 2 -2 18 -2 16 0 17 0 18 -2 1 -2 2 -2 14 -2 12 0 13 0 14 -2 1 -2 2 -2 14 -2 12 0 13 0 14 -2 1 -2 2 -2 12 -2 10 0 11 0 12 -2 1 -2 2 -2 12 -2 10 0 11 0 12 -2 1 -2 2 -2 12 -2 10 0 11 0 12 -2 1 -2 2 -2 10 -2 8 0 9 0 10 -2 1 -2 2 -2 10 -2 8 0 9 0 10 -2 1 -2 2 -2 10 -2 8 0 9 0 10 -2 1 -2 2 -2 10 -2 8 0 9 0 10 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 6 -2 3 0 5 -1 6 -2 2 -2 3 -1 163 159 88 88 161 161 161 162 0 1 -136 1 -408 1 l-407 1 0 421 0 422 11 0 c10 0 11 0 12 -2 1 -2 2 -2 14 -2 12 0 13 0 14 -2 1 -2 2 -2 12 -2 10 0 11 0 12 -2 1 -2 2 -2 12 -2 10 0 11 0 12 -2 1 -2 2 -2 12 -2 10 0 11 0 12 -2 1 -2 2 -2 10 -2 8 0 9 0 10 -2 1 -2 2 -2 10 -2 8 0 9 0 10 -2 1 -2 2 -2 10 -2 8 0 9 0 10 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 10 -2 8 0 9 0 10 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 8 -2 6 0 7 0 8 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 1 0 4 -2 8 -6 4 -4 7 -6 8 -6 2 0 4 -1 6 -4 2 -2 4 -4 6 -4 1 0 5 -3 10 -8 5 -5 9 -8 10 -8 1 0 5 -3 10 -8 5 -5 9 -8 10 -8 3 0 76 -73 76 -76 0 -1 4 -6 12 -14 8 -8 12 -13 12 -14 0 -1 2 -4 6 -8 4 -4 6 -7 6 -8 0 -1 2 -4 6 -8 4 -4 6 -7 6 -8 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 1 -1 2 -2 2 -5 0 -1 0 -3 1 -3 1 0 179 178 179 179 0 0 -1 1 -2 1 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 1 -2 4 -6 8 -4 4 -6 7 -6 8 0 1 -2 4 -6 8 -4 4 -6 7 -6 8 0 1 -2 4 -6 8 -4 4 -6 7 -6 8 0 1 -4 6 -12 14 -8 8 -12 13 -12 14 0 1 -5 8 -16 18 -11 11 -16 17 -16 18 0 3 -5 8 -8 8 -1 0 -10 8 -28 26 -17 17 -27 26 -28 26 -1 0 -6 4 -12 10 -6 6 -11 10 -12 10 -1 0 -6 4 -12 10 -6 7 -11 10 -12 10 -1 0 -4 2 -8 6 -4 4 -7 6 -8 6 -1 0 -4 2 -8 6 -4 4 -7 6 -8 6 -1 0 -4 2 -8 6 -4 4 -7 6 -8 6 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -8 2 -6 0 -7 0 -8 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -8 2 -6 0 -7 0 -8 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -8 2 -6 0 -7 0 -8 2 -1 2 -2 2 -8 2 -6 0 -7 0 -8 2 -1 2 -2 2 -8 2 -6 0 -7 0 -8 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 2 -1 2 -2 2 -10 2 -8 0 -9 0 -10 2 -1 2 -2 2 -8 2 -6 0 -7 0 -8 2 -1 2 -2 2 -10 2 -8 0 -9 0 -10 2 -1 2 -2 2 -8 2 -6 0 -7 0 -8 2 -1 2 -2 2 -10 2 -8 0 -9 0 -10 2 -1 2 -2 2 -12 2 -10 0 -11 0 -12 2 -1 2 -2 2 -10 2 -8 0 -9 0 -10 2 -1 2 -2 2 -10 2 -8 0 -9 0 -10 2 -1 2 -2 2 -14 2 -12 0 -13 0 -14 2 -1 2 -2 2 -12 2 -10 0 -11 0 -12 2 -1 2 -2 2 -12 2 -10 0 -11 0 -12 2 -1 2 -2 2 -14 2 -12 0 -13 0 -14 2 -1 2 -2 2 -16 2 -14 0 -15 0 -16 2 -1 2 -2 2 -18 2 -16 0 -17 0 -18 2 -1 2 -2 2 -18 2 -16 0 -17 0 -18 2 -1 2 -2 2 -16 2 -14 0 -15 0 -16 2 -1 2 -2 2 -6 2 -4 0 -5 0 -6 -2z M2961 2967 c-246 -246 -277 -277 -277 -280 0 -2 1 -3 4 -3 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 2 0 4 -1 6 -4 2 -3 4 -4 6 -4 1 0 4 -2 8 -6 4 -4 7 -6 8 -6 2 0 4 -1 6 -4 2 -2 4 -4 6 -4 1 0 5 -3 10 -8 5 -5 9 -8 10 -8 1 0 6 -4 14 -12 8 -8 13 -12 14 -12 3 0 60 -57 60 -60 0 -1 4 -6 12 -14 8 -8 12 -13 12 -14 0 -1 2 -4 6 -8 4 -4 6 -7 6 -8 0 -1 2 -4 6 -8 4 -4 6 -7 6 -8 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -10 0 -8 0 -9 2 -10 2 -1 2 -2 2 -12 0 -10 0 -11 2 -12 2 -1 2 -2 2 -12 0 -10 0 -11 2 -12 2 -1 2 -2 2 -14 0 -12 0 -13 2 -14 2 -1 2 -2 2 -18 l0 -17 -568 0 -567 0 -1 9 c0 6 -1 10 -1 10 -1 0 -46 -45 -102 -101 l-101 -101 13 -13 c10 -10 14 -13 15 -13 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -2 2 -2 6 -2 4 0 5 0 6 -2 1 -2 2 -2 10 -2 8 0 9 0 10 -2 2 -3 1378 -3 1380 0 1 2 2 2 14 2 12 0 13 0 14 2 1 2 2 2 6 2 4 0 5 0 6 2 1 1 2 2 4 2 2 0 3 1 4 2 1 1 2 2 4 2 2 0 3 1 4 2 1 1 2 2 4 2 1 0 4 2 8 6 4 4 7 6 8 6 3 0 8 5 8 8 0 1 2 4 6 8 4 4 6 7 6 8 0 2 1 3 2 4 1 1 2 2 2 4 0 2 1 3 2 4 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 62 0 60 0 61 -2 62 -2 1 -2 2 -2 22 0 20 0 21 -2 22 -2 1 -2 2 -2 22 0 20 0 21 -2 22 -2 1 -2 2 -2 12 0 10 0 11 -2 12 -2 1 -2 2 -2 12 0 10 0 11 -2 12 -2 1 -2 2 -2 12 0 10 0 11 -2 12 -2 1 -2 2 -2 12 0 10 0 11 -2 12 -2 1 -2 2 -2 10 0 8 0 9 -2 10 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 1 -2 4 -6 8 -4 4 -6 7 -6 8 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 1 -2 4 -6 8 -4 4 -6 7 -6 8 0 1 -2 4 -6 8 -4 4 -6 7 -6 8 0 1 -3 5 -8 10 -5 5 -8 9 -8 10 0 1 -4 6 -12 14 -8 8 -12 13 -12 14 0 1 -13 15 -39 41 -26 26 -40 39 -41 39 -1 0 -6 4 -14 12 -8 8 -13 12 -14 12 -1 0 -6 4 -12 10 -6 7 -11 10 -12 10 -1 0 -4 2 -8 6 -4 4 -7 6 -8 6 -1 0 -4 2 -8 6 -4 4 -7 6 -8 6 -1 0 -4 2 -8 6 -4 4 -7 6 -8 6 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -4 1 -6 4 -2 3 -4 4 -6 4 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -1 0 -3 1 -6 4 -2 2 -5 4 -7 4 -1 0 -2 1 -2 2 0 1 19 2 165 2 164 0 165 0 166 2 1 2 2 2 6 2 4 0 5 0 6 2 1 1 2 2 4 2 2 0 3 1 4 2 1 1 2 2 4 2 2 0 4 1 6 4 2 2 4 4 6 4 3 0 24 21 24 24 0 2 2 4 4 6 3 2 4 4 4 6 0 2 1 3 2 4 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 12 0 10 0 11 2 12 2 1 2 2 2 22 0 20 0 21 -2 22 -2 1 -2 2 -2 40 0 38 0 39 -2 40 -2 1 -2 2 -2 22 0 20 0 21 -2 22 -2 1 -2 2 -2 16 0 14 0 15 -2 16 -2 1 -2 2 -2 16 0 14 0 15 -2 16 -2 1 -2 2 -2 10 0 8 0 9 -2 10 -2 1 -2 2 -2 10 0 8 0 9 -2 10 -2 1 -2 2 -2 7 0 3 0 5 -1 5 -1 0 -126 -125 -278 -277z"/></g></symbol><symbol id="mk-tri" viewBox="436 116 740 624"><g transform="scale(0.25) translate(0,4680) scale(1,-1)"><path d="M3956 4122 c-1 -2 -3 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -2 -2 -2 -6 -2 -4 0 -5 0 -6 -2 -1 -1 -2 -2 -3 -2 0 0 -1 0 -1 -1 0 -1 53 -54 117 -118 129 -129 122 -123 123 -111 0 4 1 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 7 0 5 -2 7 -4 3z"/></g></symbol><symbol id="mk-a1" viewBox="436 116 740 624"><g transform="scale(0.25) translate(0,4680) scale(1,-1)"><path d="M4072 3810 c-1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -1 -2 -2 -4 -2 -3 0 -8 -5 -8 -8 0 -2 -2 -4 -4 -6 -4 -3 -4 -4 -4 -10 0 -6 0 -7 -2 -8 -2 -1 -2 -2 -2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 1 -1 2 -2 2 -4 0 -1 3 -5 12 -14 8 -8 12 -13 12 -14 0 -1 3 -5 8 -10 5 -5 8 -9 8 -10 0 -1 3 -5 8 -10 5 -5 8 -9 8 -10 0 -2 2 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -10 0 -8 0 -9 2 -10 2 -1 2 -2 2 -12 0 -10 0 -11 2 -12 2 -1 2 -2 2 -14 0 -12 0 -13 2 -14 2 -1 2 -2 2 -46 0 -44 0 -45 -2 -46 -2 -1 -2 -2 -2 -16 0 -14 0 -15 -2 -16 -2 -1 -2 -2 -2 -12 0 -10 0 -11 -2 -12 -2 -1 -2 -2 -2 -8 0 -6 0 -7 -2 -8 -2 -1 -2 -2 -2 -8 0 -6 0 -7 -2 -8 -2 -1 -2 -2 -2 -6 0 -4 0 -5 -2 -6 -2 -1 -2 -2 -2 -6 0 -4 0 -5 -2 -6 -2 -1 -2 -2 -2 -6 0 -4 0 -5 -2 -6 -2 -1 -2 -2 -2 -6 0 -4 0 -5 -2 -6 -2 -1 -2 -2 -2 -14 0 -12 0 -13 2 -14 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -1 2 -5 9 -11 9 -9 9 -9 13 -9 4 0 5 0 6 -2 1 -2 2 -2 14 -2 12 0 13 0 14 2 1 1 2 2 4 2 2 0 3 1 4 2 1 1 2 2 4 2 1 0 5 2 11 9 9 9 9 9 9 13 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 8 0 6 0 7 2 8 2 1 2 2 2 8 0 6 0 7 2 8 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 10 0 8 0 9 2 10 2 1 2 2 2 10 0 8 0 9 2 10 2 1 2 2 2 16 0 14 0 15 2 16 2 1 2 2 2 60 0 58 0 59 -2 60 -2 1 -2 2 -2 14 0 12 0 13 -2 14 -2 1 -2 2 -2 14 0 12 0 13 -2 14 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 10 0 8 0 9 -2 10 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 1 -2 4 -6 8 -4 4 -6 7 -6 8 0 1 -2 4 -6 8 -4 4 -6 7 -6 8 0 1 -5 7 -14 16 -9 9 -14 15 -14 16 0 3 -9 12 -12 12 -2 0 -4 2 -6 4 -3 4 -4 4 -8 4 -4 0 -5 0 -6 2 -1 2 -2 2 -12 2 -10 0 -11 0 -12 -2z"/></g></symbol><symbol id="mk-a2" viewBox="436 116 740 624"><g transform="scale(0.25) translate(0,4680) scale(1,-1)"><path d="M4324 4066 c-1 -1 -2 -2 -4 -2 -2 0 -3 -1 -4 -2 -1 -1 -2 -2 -4 -2 -3 0 -12 -9 -12 -12 0 -2 -2 -4 -4 -6 l-4 -3 0 -9 c0 -8 0 -9 -2 -10 l-2 -2 2 -2 c2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -1 4 -6 16 -18 11 -10 16 -17 16 -18 0 -1 4 -6 12 -14 8 -8 12 -13 12 -14 0 -1 3 -5 8 -10 5 -5 8 -9 8 -10 0 -1 3 -5 8 -10 5 -5 8 -9 8 -10 0 -2 2 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -4 4 -6 3 -2 4 -4 4 -6 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 1 -1 2 -2 2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -6 0 -4 0 -5 2 -6 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 2 -1 2 -2 2 -12 0 -10 0 -11 2 -12 2 -1 2 -2 2 -10 0 -8 0 -9 2 -10 2 -1 2 -2 2 -16 0 -14 0 -15 2 -16 2 -1 2 -2 2 -22 0 -20 0 -21 2 -22 2 -1 2 -2 2 -58 0 -56 0 -57 -2 -58 -2 -1 -2 -2 -2 -18 0 -16 0 -17 -2 -18 -2 -1 -2 -2 -2 -16 0 -14 0 -15 -2 -16 -2 -1 -2 -2 -2 -12 0 -10 0 -11 -2 -12 -2 -1 -2 -2 -2 -10 0 -8 0 -9 -2 -10 -2 -1 -2 -2 -2 -8 0 -6 0 -7 -2 -8 -2 -1 -2 -2 -2 -10 0 -8 0 -9 -2 -10 -2 -1 -2 -2 -2 -6 0 -4 0 -5 -2 -6 -2 -1 -2 -2 -2 -8 0 -6 0 -7 -2 -8 -2 -1 -2 -2 -2 -6 0 -4 0 -5 -2 -6 -2 -1 -2 -2 -2 -8 0 -6 0 -7 -2 -8 -1 -1 -2 -2 -2 -4 0 -2 -1 -3 -2 -4 -2 -1 -2 -2 -2 -6 0 -4 0 -5 -2 -6 -2 -1 -2 -2 -2 -6 0 -4 0 -5 -2 -6 -2 -1 -2 -2 -2 -6 0 -4 0 -5 -2 -6 -2 -1 -2 -2 -2 -8 0 -6 0 -7 -2 -8 -1 -1 -2 -2 -2 -4 0 -2 1 -3 2 -4 2 -1 2 -2 2 -8 0 -6 0 -7 2 -8 1 -1 2 -2 2 -4 0 -1 1 -3 4 -6 2 -2 4 -5 4 -7 0 -2 1 -3 4 -3 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -1 2 -2 4 -2 2 0 3 -1 4 -2 1 -2 2 -2 10 -2 8 0 9 0 10 2 1 2 2 2 8 2 6 0 7 0 10 4 2 2 4 4 6 4 3 0 8 5 8 8 0 2 2 4 4 6 4 3 4 4 4 8 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 1 1 2 2 2 4 0 2 1 3 2 4 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 8 0 6 0 7 2 8 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 8 0 6 0 7 2 8 2 1 2 2 2 6 0 4 0 5 2 6 2 1 2 2 2 10 0 8 0 9 2 10 2 1 2 2 2 8 0 6 0 7 2 8 2 1 2 2 2 10 0 8 0 9 2 10 2 1 2 2 2 12 0 10 0 11 2 12 2 1 2 2 2 14 0 12 0 13 2 14 2 1 2 2 2 20 0 18 0 19 2 20 2 1 2 2 2 82 0 80 0 81 -2 82 -2 1 -2 2 -2 18 0 16 0 17 -2 18 -2 1 -2 2 -2 14 0 12 0 13 -2 14 -2 1 -2 2 -2 12 0 10 0 11 -2 12 -2 1 -2 2 -2 10 0 8 0 9 -2 10 -2 1 -2 2 -2 10 0 8 0 9 -2 10 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 8 0 6 0 7 -2 8 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -2 1 -2 2 -2 6 0 4 0 5 -2 6 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 3 -2 4 -1 1 -2 2 -2 4 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 2 -1 4 -4 6 -3 2 -4 4 -4 6 0 1 -2 4 -6 8 -4 4 -6 7 -6 8 0 1 -3 5 -8 10 -5 5 -8 9 -8 10 0 1 -3 5 -8 10 -5 5 -8 9 -8 10 0 1 -4 6 -12 14 -8 8 -12 13 -12 14 0 3 -37 40 -40 40 -2 0 -3 1 -4 2 -1 1 -2 2 -4 2 -2 0 -3 1 -4 2 -1 2 -2 2 -16 2 -14 0 -15 0 -16 -2z M4272 3506 c-1 -2 0 -6 2 -6 2 0 3 4 2 6 -1 1 -1 2 -2 2 -1 0 -1 -1 -2 -2z M4276 3483 c-1 -3 0 -10 2 -10 2 0 2 10 0 11 0 0 -1 0 -2 -1z M4280 3454 c-1 -2 0 -6 2 -6 2 0 3 4 2 6 -1 1 -1 2 -2 2 -1 0 -1 -1 -2 -2z M4284 3403 c0 -1 0 -13 0 -26 0 -21 1 -24 2 -24 2 0 2 50 0 51 0 0 -1 0 -2 -1z M4280 3318 c-1 -2 0 -6 2 -6 2 0 3 4 2 6 -1 1 -1 2 -2 2 -1 0 -1 -1 -2 -2z M4276 3290 c-1 -2 0 -6 2 -6 1 0 1 1 2 2 1 2 0 6 -2 6 -1 0 -1 -1 -2 -2z M4272 3270 c-1 -2 0 -6 2 -6 2 0 3 4 2 6 -1 1 -1 2 -2 2 -1 0 -1 -1 -2 -2z"/></g></symbol></svg>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="flowg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF4A00"/><stop offset="1" stop-color="#FFB300"/></linearGradient></defs></svg>
-<div class="aura" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
 
-<header class="bar">
+<header class="top">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Busy Signal IT, back to top"><svg class="bsm" viewBox="0 0 740 624" aria-hidden="true" focusable="false"><use href="#mk-b" class="mk-b"/><use href="#mk-tri" class="mk-tri"/><use href="#mk-a1" class="mk-a1"/><use href="#mk-a2" class="mk-a2"/></svg><span class="word">Busy Signal <i>IT</i></span></a>
-    <nav class="links" aria-label="Main">
-      <a class="hide-s" href="#build">What I build</a>
-      <a class="hide-s" href="#work">Work</a>
-      <a class="hide-s" href="#brand">Brand</a>
-      <a class="hide-s" href="#credentials">Credentials</a>
-      <div class="mode" role="group" aria-label="Colour mode">
-        <button type="button" data-mode="dark" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark</span></button>
-        <button type="button" data-mode="light" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></svg><span>Light</span></button>
+    <a class="brand" href="#top" aria-label="Busy Signal IT, back to top">
+      <img class="mark-d" src="assets/brand/busy-signal-mark.svg" width="300" height="253" alt="">
+      <img class="mark-l" src="assets/brand/busy-signal-mark-light.svg" width="300" height="253" alt="">
+      <span class="name">Busy Signal <span class="it">IT</span></span>
+    </a>
+    <div class="top-r">
+      <div class="theme" role="group" aria-label="Colour theme">
+        <button type="button" id="t-dark" data-t="dark" aria-pressed="true">Dark</button>
+        <button type="button" id="t-light" data-t="light" aria-pressed="false">Light</button>
       </div>
-      <a class="btn" href="#contact">Start a project</a>
-    </nav>
+      <a class="btn go" href="https://wa.me/27681616498" target="_blank" rel="noopener" data-wa>Your move</a>
+    </div>
   </div>
 </header>
 
 <main id="top">
 
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-mark" aria-hidden="true"><svg class="bsm" viewBox="0 0 740 624" aria-hidden="true" focusable="false"><use href="#mk-b" class="mk-b"/><use href="#mk-tri" class="mk-tri"/><use href="#mk-a1" class="mk-a1"/><use href="#mk-a2" class="mk-a2"/></svg></div>
   <div class="wrap">
+    <div class="hero-txt">
+      <p class="label">Edmund Gumbo <b>·</b> Busy Signal IT</p>
+      <h1>I build the systems that <em>answer</em> for your business.</h1>
+      <p class="lead">Websites, WhatsApp assistants and simple business systems. I learn how your week runs, then build the part that can run itself.</p>
+      <div class="hero-cta">
+        <a class="btn go" href="https://wa.me/27681616498" target="_blank" rel="noopener" data-wa>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+          Your move: message me
+        </a>
+        <a class="btn" href="#work">See the work</a>
+      </div>
+      <div class="facts">
+        <span><b>Since 2020</b> building for businesses</span>
+        <span><b>5 businesses</b> served</span>
+        <span><span class="dot"></span>Systems running today</span>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="assets/media/edmund-portrait.webp" width="840" height="975" alt="Edmund Gumbo in a navy turtleneck, arms folded behind a carved wooden chess set">
+      <figcaption>Photo by Robbie, <a href="https://raphoto.co.za" target="_blank" rel="noopener" style="text-decoration:none">raphoto.co.za</a></figcaption>
+      <div class="tag"><strong>Edmund Gumbo</strong><span>Founder, Busy Signal IT</span></div>
+    </figure>
+  </div>
+</section>
+
+<!-- PICKER -->
+<section id="build">
+  <div class="wrap">
+    <p class="label">Try it <b>·</b> pick the one closest to you</p>
+    <div class="pick-q" style="margin-top:14px">I run</div>
+    <div class="chips" role="group" aria-label="Your kind of business" id="chips"></div>
+    <div class="pick-body">
+      <div class="pick-info">
+        <div><p class="label">What goes wrong</p><p class="pain" id="p-pain"></p></div>
+        <div><p class="label">What I would build</p><ul class="builds" id="p-build"></ul></div>
+        <div class="pick-foot">
+          <a class="btn go" href="https://wa.me/27681616498" target="_blank" rel="noopener" data-wa>Ask me about this</a>
+          <a class="link" id="p-proof" href="#work"></a>
+        </div>
+      </div>
+      <div class="phone" aria-label="Sample WhatsApp conversation">
+        <div class="phone-top"><div class="av" id="p-av">MP</div><div><b id="p-biz">Business</b><small>● answering now</small></div></div>
+        <div class="chat" id="chat" aria-live="polite"></div>
+        <p class="phone-note">A sample chat with a made up business</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATEMENT -->
+<section class="statement" aria-label="Why this matters">
+  <div class="wrap">
+    <p id="statement">A missed call is a missed job. A slow reply sends people to the next business. My work makes sure every message gets an answer, every quote goes out and every booking lands in one place.</p>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Work <b>·</b> live and in use</p>
+      <h2>Real businesses. <em>Real systems.</em></h2>
+    </div>
+
+    <!-- CASE 1 -->
+    <article class="case">
+      <div class="case-txt">
+        <span class="num">RISKPROP REALTY · PROPERTY AGENCY</span>
+        <h3>One button. Everything updates.</h3>
+        <p class="lead">I built the whole system behind their rentals. The team lists and prices every flat in one place. Alec, their WhatsApp assistant, answers tenants day and night, sends photos and books viewings. Change a flat once and Alec, the website and the adverts all know straight away.</p>
+        <div class="case-links">
+          <a class="link" href="https://wa.me/27695736277?text=Hi%20Alec%2C%20I%20found%20you%20on%20Edmund%27s%20portfolio." target="_blank" rel="noopener">Chat to Alec on WhatsApp ↗</a>
+          <a class="link" href="https://riskproprealty.co.za" target="_blank" rel="noopener">riskproprealty.co.za ↗</a>
+        </div>
+      </div>
+      <div class="demo">
+        <div class="demo-head"><span class="try">Try it: switch a flat off</span><button type="button" class="mini" id="raise">Raise rents 7%</button></div>
+        <div class="units" id="units"></div>
+        <div class="outs">
+          <div class="out" id="o-alec"><p class="label"><span>Alec on WhatsApp</span></p><p id="alec-txt"></p></div>
+          <div class="out" id="o-web"><p class="label"><span>Website</span></p><p class="big" id="web-n">0</p><p>flats listed</p></div>
+          <div class="out" id="o-ads"><p class="label"><span>Adverts</span></p><p class="big" id="ads-n">0</p><p>adverts live</p></div>
+        </div>
+        <p class="demo-note">Sample buildings and prices. The real system runs every day at RISKPROP Realty.</p>
+      </div>
+    </article>
+
+    <!-- CASE 2 -->
+    <article class="case">
+      <div class="case-txt">
+        <span class="num">JACK ENTERPRISE · BUILDING AND RENOVATIONS</span>
+        <h3>A website that works like a full team.</h3>
+        <p class="lead">Jack does it all, from tiles to trellis doors. His site shows eight trades with photos of his own jobs, and puts WhatsApp, a call and a quote request one tap away on every screen. I designed it, built it and look after it every month.</p>
+        <div class="case-links"><a class="link" href="https://jackenterprise.co.za" target="_blank" rel="noopener">jackenterprise.co.za ↗</a></div>
+      </div>
+      <div class="demo">
+        <div class="demo-head"><span class="try">Try it: pick a trade</span></div>
+        <div class="gal-chips" id="gal-chips" role="group" aria-label="Filter Jack's work by trade"></div>
+        <div class="gal" id="gal"></div>
+        <img class="jack-shot" src="assets/work/jack-enterprise-desktop.webp" width="1280" height="672" alt="The Jack Enterprise home page on a laptop" loading="lazy">
+        <p class="demo-note">Photos of Jack's own jobs, as shown on his site.</p>
+      </div>
+    </article>
+
+    <!-- CASE 3 -->
+    <article class="case">
+      <div class="case-txt">
+        <span class="num">LEAD ENGINE · FINDING NEW CLIENTS</span>
+        <h3>It finds the buyers. The sales team makes the call.</h3>
+        <p class="lead">Lead Engine reads the news, new business listings and company job adverts for signs that a business is ready to buy. Each lead gets a score for how well it fits the client. Only the strong ones go through, and only after I check them.</p>
+        <div class="case-links"><a class="link" href="https://busysignal-leads.netlify.app" target="_blank" rel="noopener">See Lead Engine ↗</a></div>
+      </div>
+      <div class="demo">
+        <div class="demo-head"><span class="try">Try it: let the strong leads through</span></div>
+        <div class="stats3"><div><strong id="s-found">146</strong><span>Signs found</span></div><div><strong id="s-strong">3</strong><span>Strong fits</span></div><div><strong id="s-sent">0</strong><span>Sent to client</span></div></div>
+        <div id="leads"></div>
+        <div class="allow"><span>Send strong leads to the client</span><button type="button" class="sw" id="allow" role="switch" aria-checked="false" aria-label="Send strong leads to the client"></button></div>
+        <p class="demo-note">Made up businesses and numbers. The real dashboard sits behind a client login.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients">
+  <div class="wrap">
+    <div class="clients-top">
+      <div class="huge" id="count">5</div>
+      <div class="sec-head" style="margin:0">
+        <p class="label">Clients <b>·</b> who I build for</p>
+        <h2>Businesses that trust me <em>with their systems.</em></h2>
+      </div>
+    </div>
     <div>
-      <p class="tag">It answers.</p>
-      <p class="svc">AI agents · Automation · Web platforms · Payments</p>
-      <h1>AI that answers, quotes and books for your <span class="rot" id="rot"><span class="grad-text on">workshop.</span><span class="grad-text">salon.</span><span class="grad-text">building site.</span><span class="grad-text">agency.</span><span class="grad-text">business.</span></span></h1>
-      <p class="sub">Busy Signal IT designs and builds AI agents, websites and business systems for any business with a routine. I learn how your week runs, then build the part that runs itself.</p>
-      <div class="cta">
-        <a class="btn" href="#contact">Start a project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn ghost" href="#work">See the work</a>
-      </div>
-      <div class="trust">
-        <a href="https://www.credly.com/badges/5d75a79f-7d44-4ae2-86d0-8db96e0eb889" target="_blank" rel="noopener"><img src="assets/certs/ibm-ai-fundamentals-badge.png" width="34" height="34" alt="">IBM SkillsBuild · AI Fundamentals</a>
-        <span><i class="dot" aria-hidden="true"></i>Systems live in production</span>
-        <span>Johannesburg, working worldwide</span>
-      </div>
+      <div class="crow"><b>RISKPROP Realty</b><span>Property agency</span><p>Rental system, Alec the WhatsApp assistant, website, team board</p></div>
+      <div class="crow"><b>J Entertainment</b><span>Events</span><p>Their own ticketing system</p></div>
+      <div class="crow"><b>Jack Enterprise</b><span>Building and renovations</span><p>Website with WhatsApp, call and quote buttons</p></div>
+      <div class="crow"><b>Celestia AV</b><span>Lead Engine</span><p>New client leads, found and scored for their sales team</p></div>
+      <div class="crow"><b>Leading Business Systems</b><span>Lead Engine</span><p>New client leads, found and scored for their sales team</p></div>
     </div>
+    <p class="more">More coming online.</p>
+  </div>
+</section>
 
-    <div class="card console" id="console" aria-label="Simulated AI agent demo">
-      <div class="c-head"><svg class="bsm" viewBox="0 0 740 624" aria-hidden="true" focusable="false"><use href="#mk-b" class="mk-b"/><use href="#mk-tri" class="mk-tri"/><use href="#mk-a1" class="mk-a1"/><use href="#mk-a2" class="mk-a2"/></svg><div class="c-title">Busy Signal AI agent<small>Answering on WhatsApp</small></div><span class="pill c-live">Live demo</span></div>
-      <div class="tabs" role="tablist" aria-label="Pick a business">
-        <button role="tab" aria-selected="true" data-i="0">Plumber</button>
-        <button role="tab" aria-selected="false" data-i="1">Salon</button>
-        <button role="tab" aria-selected="false" data-i="2">Mechanic</button>
-        <button role="tab" aria-selected="false" data-i="3">Property agency</button>
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-photo">
+    <img src="assets/media/edmund-chess.webp" width="1600" height="1144" alt="Edmund Gumbo at a desk with a carved wooden chess set" loading="lazy">
+    <span class="label">Photo by Robbie, <a href="https://raphoto.co.za" target="_blank" rel="noopener" style="text-decoration:none">raphoto.co.za</a></span>
+  </div>
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="sec-head" style="margin:0">
+        <p class="label">Meet Edmund</p>
+        <h2>A real person behind <em>every system.</em></h2>
       </div>
-      <div class="c-prog" aria-hidden="true"><i id="cprog"></i></div>
-      <div class="c-body" id="cbody" aria-live="polite"></div>
-      <div class="c-foot"><span>Simulated conversation with made up businesses.</span><span>The real ones run on WhatsApp.</span></div>
+      <div class="story">
+        <p>I'm <strong>Edmund Tafadzwa Gumbo</strong>. I taught myself to build AI systems, and I started Busy Signal IT in 2020.</p>
+        <p>From 2023 I built the systems behind <strong>RISKPROP Realty</strong> as their CTO. The rental system, Alec on WhatsApp and the website all run every day with real tenants.</p>
+        <p>When you work with me, you deal with me from the first chat to the day it goes live, and after. I learn how your business runs first, then build one piece at a time, so nothing breaks what already works.</p>
+        <p>Based between Johannesburg and Harare. I work with businesses anywhere.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="board-sec" aria-label="Who it answers for">
-  <div class="wrap">
-    <div class="board-head"><p class="kicker">The switchboard</p><p class="board-line">No more busy signal. Every line gets answered.</p><p class="board-stat" aria-live="off"><b id="bcount">0</b> calls answered while you read this</p></div>
-    <div class="board" id="board"><button type="button" class="line" data-biz="Plumbing company"><span class="jack" aria-hidden="true"></span><span class="ln-name">Plumbers</span><span class="ln-q">“Can someone come today?”</span><span class="ln-st">Line open</span></button><button type="button" class="line" data-biz="Hair salon"><span class="jack" aria-hidden="true"></span><span class="ln-name">Salons</span><span class="ln-q">“Any slots on Saturday?”</span><span class="ln-st">Line open</span></button><button type="button" class="line" data-biz="Mechanic"><span class="jack" aria-hidden="true"></span><span class="ln-name">Mechanics</span><span class="ln-q">“How much for a service?”</span><span class="ln-st">Line open</span></button><button type="button" class="line" data-biz="Property agency"><span class="jack" aria-hidden="true"></span><span class="ln-name">Property agencies</span><span class="ln-q">“Is the flat still available?”</span><span class="ln-st">Line open</span></button><button type="button" class="line" data-biz="Building contractor"><span class="jack" aria-hidden="true"></span><span class="ln-name">Builders</span><span class="ln-q">“Can I get a quote?”</span><span class="ln-st">Line open</span></button><button type="button" class="line" data-biz="Carpenter"><span class="jack" aria-hidden="true"></span><span class="ln-name">Carpenters</span><span class="ln-q">“How long for kitchen cupboards?”</span><span class="ln-st">Line open</span></button><button type="button" class="line" data-biz="Medical practice"><span class="jack" aria-hidden="true"></span><span class="ln-name">Clinics</span><span class="ln-q">“Can I move my appointment?”</span><span class="ln-st">Line open</span></button><button type="button" class="line" data-biz="Restaurant"><span class="jack" aria-hidden="true"></span><span class="ln-name">Restaurants</span><span class="ln-q">“Are you open tonight?”</span><span class="ln-st">Line open</span></button><button type="button" class="line" data-biz="Clothing shop"><span class="jack" aria-hidden="true"></span><span class="ln-name">Shops</span><span class="ln-q">“Do you have it in a medium?”</span><span class="ln-st">Line open</span></button><button type="button" class="line" data-biz="Content creator"><span class="jack" aria-hidden="true"></span><span class="ln-name">Creators</span><span class="ln-q">“We would like to sponsor you”</span><span class="ln-st">Line open</span></button></div>
-    <p class="cap">Tap your line to see what I would build for you.</p>
-  </div>
-</section>
-
-<section class="caps" id="build">
-  <div class="wrap">
-    <div class="rv">
-      <p class="kicker">What I build</p>
-      <h2 class="h2">Four things. Built to work together.</h2>
-      <p class="lead">Most businesses need one or two of these. They work best when they share the same data.</p>
+<!-- HOW -->
+<section id="how">
+  <div class="wrap how-grid">
+    <div class="sec-head">
+      <p class="label">How I work</p>
+      <h2>One chat to start. <em>Then I stay on it.</em></h2>
     </div>
-    <div class="cap-grid">
-      <article class="card cap-card rv">
-        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg></span>
-        <h3>AI agents</h3>
-        <p>WhatsApp and web chat agents that answer from your real prices, stock and calendar. They quote, book and hand over to a person when it matters.</p>
-        <p class="eg">e.g. Alec, RISKPROP Realty</p>
-      </article>
-      <article class="card cap-card rv">
-        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></span>
-        <h3>Business websites</h3>
-        <p>Fast sites on your own domain, with WhatsApp, call and quote buttons on every screen, and online payments when you need them.</p>
-        <p class="eg">e.g. jackenterprise.co.za</p>
-      </article>
-      <article class="card cap-card rv">
-        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>
-        <h3>Systems and databases</h3>
-        <p>One database for your stock, jobs or clients, with a simple screen your team uses every day. Everything else reads from it.</p>
-        <p class="eg">e.g. the Stock Manager</p>
-      </article>
-      <article class="card cap-card rv">
-        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
-        <h3>Automations</h3>
-        <p>Reminders, follow ups, reports and alerts that run on their own and connect the tools you already use.</p>
-        <p class="eg">e.g. ROY, utility bill checks</p>
-      </article>
+    <div class="steps" id="steps">
+      <svg viewBox="0 0 4 100" preserveAspectRatio="none" aria-hidden="true"><line class="track" x1="2" y1="0" x2="2" y2="100" stroke-width="2" vector-effect="non-scaling-stroke"/><line class="draw" id="draw" x1="2" y1="0" x2="2" y2="0" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+      <div class="step"><span class="label">Step 1</span><h3>Listen</h3><p>We talk through a normal week. I look for the job someone repeats by hand every day.</p></div>
+      <div class="step"><span class="label">Step 2</span><h3>Build</h3><p>I build around the tools you already use, then test it on your real work before anyone else sees it.</p></div>
+      <div class="step"><span class="label">Step 3</span><h3>Go live</h3><p>It runs inside your business: on WhatsApp, on your website or on your team's screens.</p></div>
+      <div class="step"><span class="label">Step 4</span><h3>Watch and fix</h3><p>I check what it does, catch what goes wrong and fix it, so it gets better every week.</p></div>
     </div>
   </div>
 </section>
 
-<section class="case case-1" id="work">
-  <div class="wrap">
-    <div class="case-head rv">
+<!-- CREDENTIALS -->
+<section id="creds">
+  <div class="wrap creds-grid">
+    <div class="sec-head" style="margin:0">
+      <p class="label">Credentials</p>
+      <h2>Certified, and <em>still learning every week.</em></h2>
+    </div>
+    <div style="display:grid;gap:28px">
+      <div class="cert">
+        <img src="assets/certs/ibm-ai-fundamentals-badge.png" width="96" height="96" alt="IBM SkillsBuild Artificial Intelligence Fundamentals badge" loading="lazy">
+        <div><b>Artificial Intelligence Fundamentals</b><span>IBM SkillsBuild · January 2026</span><a class="link" href="https://www.credly.com/badges/5d75a79f-7d44-4ae2-86d0-8db96e0eb889" target="_blank" rel="noopener">Check it on Credly ↗</a></div>
+      </div>
       <div>
-        <p class="case-no"><b>Case 01</b> RISKPROP Realty · Property · Live</p>
-        <h2 class="h2">One database. One button. Alec knows instantly.</h2>
-      </div>
-      <div><p class="lead">For RISKPROP Realty I built the whole system behind their leasing: a Stock Manager where the team prices and lists every unit, one database underneath it, and Alec, an AI agent who answers tenants on WhatsApp day and night. Press a button in the Stock Manager and Alec, the website and the adverts all know at once.</p>
-        <div class="cta"><a class="btn" href="https://wa.me/27695736277?text=Hi%20Alec%2C%20I%20found%20you%20on%20the%20Busy%20Signal%20IT%20portfolio." target="_blank" rel="noopener">Chat to Alec on WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a><a class="btn ghost" href="https://riskproprealty.co.za" target="_blank" rel="noopener">Visit riskproprealty.co.za</a></div></div>
-    </div>
-
-    <div class="sync rv" id="sync">
-      <div class="card sm">
-        <div class="sm-top">
-          <div class="sm-title">Stock Manager<small>Try it: switch a unit off or raise the rents</small></div>
-          <button class="raise" type="button" id="raise" aria-pressed="false">Raise rents 7%</button>
-        </div>
-        <ul class="units" id="units"></ul>
-        <p class="sm-hint">Every change writes to one database. Watch Alec, the website and the adverts update.</p>
-        <div class="audit"><div class="k">Change log</div><ol id="audit"><li><span>Naledi K. updated the photos for 2A</span><time>09:14</time></li><li><span>Sipho M. listed 1C at R2 950</span><time>08:51</time></li><li><span>Thandeka P. set the deposit rule for Protea House</span><time>Mon</time></li></ol></div>
-      </div>
-      <div class="wire" aria-hidden="true">
-        <svg viewBox="0 0 150 400" preserveAspectRatio="none" id="wiresvg">
-          <path d="M0 200 H75"/><path d="M75 200 C110 200 110 70 150 70"/><path d="M75 200 H150"/><path d="M75 200 C110 200 110 330 150 330"/>
-          <path class="flow" d="M0 200 H75 C110 200 110 70 150 70"/><path class="flow" d="M0 200 H150"/><path class="flow" d="M0 200 H75 C110 200 110 330 150 330"/>
-        </svg>
-        <div class="db"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><b>One database</b><small>single source of truth</small></div>
-      </div>
-      <div class="outs">
-        <div class="card out" id="o-alec">
-          <div class="out-h"><span>Alec on WhatsApp</span><span class="stamp" data-stamp>in sync</span></div>
-          <div class="msg them"><b>Enquiry</b>Hi, is the studio at Protea House still available?</div>
-          <div class="msg ai" id="alec-reply"><b>Alec</b></div>
-        </div>
-        <div class="card out" id="o-web">
-          <div class="out-h"><span>Public website</span><span class="stamp" data-stamp>in sync</span></div>
-          <ul class="w-list" id="w-list"></ul>
-        </div>
-        <div class="card out" id="o-ads">
-          <div class="out-h"><span>Property adverts</span><span class="stamp" data-stamp>in sync</span></div>
-          <ul class="ad-list" id="ad-list"></ul>
-        </div>
-      </div>
-    </div>
-    <p class="cap">A working model of the real system, redrawn with sample buildings and prices. The real one runs live at RISKPROP Realty.</p>
-
-    <div class="built">
-      <article class="card bcard hero-b rv"><h3>Alec <span class="pill">Live</span></h3><p>The AI agent on the agency's WhatsApp and Property24 adverts. Reads live stock, quotes real prices, sends photos, books viewings and tells the agent on duty.</p></article>
-      <article class="card bcard rv"><h3>Stock Manager <span class="pill">Live</span></h3><p>Where the team prices, edits and switches units on and off. Bulk rent increases with a preview, a record of who changed what, three levels of access.</p></article>
-      <article class="card bcard rv"><h3>Website <span class="pill">Live</span></h3><p>Listings come straight from the Stock Manager and disappear the moment a unit is let. It replaced a paid website vendor. <a href="https://riskproprealty.co.za" target="_blank" rel="noopener">riskproprealty.co.za</a></p></article>
-      <article class="card bcard rv"><h3>ROY <span class="pill">In use</span></h3><p>Takes the monthly municipal and electricity figures and flags the bills that look wrong, so they get checked and fixed.</p></article>
-      <article class="card bcard rv"><h3>Team board <span class="pill">In use</span></h3><p>One shared board for six departments, from cleaning to accounts, so the owner and the team see the same picture.</p></article>
-    </div>
-
-    <div class="proof">
-      <div class="rv">
-        <h3>Every conversation lands in one inbox.</h3>
-        <p>The team can read what Alec said, see who booked a viewing and step in with one tap. When Alec gets something wrong, I see it in the log and fix it.</p>
-      </div>
-      <div class="card inbox rv">
-        <ul class="threads" aria-label="Conversations, sample data">
-          <li class="t on"><span class="av">TM</span><div class="tm"><div class="tn">Thandi Mokoena <span class="chip ok">Viewing booked</span></div><div class="tp">You're set for Friday at 13:00.</div></div></li>
-          <li class="t"><span class="av">SD</span><div class="tm"><div class="tn">Sipho Dlamini <span class="chip">New lead</span></div><div class="tp">You clicked on the ad for the studio...</div></div></li>
-          <li class="t"><span class="av">LN</span><div class="tm"><div class="tn">Lerato Nkosi <span class="chip ok">Viewing booked</span></div><div class="tp">Wednesday it is. Which time suits you?</div></div></li>
-          <li class="t"><span class="av">PV</span><div class="tm"><div class="tn">Pieter van Wyk</div><div class="tp">We have studios open at Acacia Place.</div></div></li>
-        </ul>
-        <div class="thread">
-          <div class="msg them"><b>Thandi · 12:41</b>Hi, is the studio at Jacaranda Court still available?</div>
-          <div class="msg ai"><b>Alec · 12:41</b>Hi Thandi! Yes, there's a studio open for R3 100 a month. Here are some photos.</div>
-          <div class="msg them"><b>Thandi · 12:44</b>Can I see it on Friday?</div>
-          <div class="msg ai"><b>Alec · 12:45</b>Great, you're set for Friday at 13:00. The agent on duty has your details.</div>
-        </div>
+        <p class="label" style="margin-bottom:12px">Tools I build with</p>
+        <div class="tools"><span>n8n</span><span>Supabase</span><span>WhatsApp Business</span><span>OpenAI</span><span>Gemini</span><span>Claude</span><span>Netlify</span><span>GitHub</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="case" id="jack">
+<!-- CONTACT -->
+<section class="contact" id="contact">
   <div class="wrap">
-    <div class="case-head rv">
-      <div>
-        <p class="case-no"><b>Case 02</b> Jack Enterprise · Renovations and building · Live</p>
-        <h2 class="h2">A one person business with a website that works like a full team.</h2>
+    <p class="label">Contact</p>
+    <h2>Your <em>move.</em></h2>
+    <div class="contact-grid">
+      <div style="display:grid;gap:24px">
+        <p class="lead">Tell me how your week runs and what keeps eating your time. I reply on WhatsApp.</p>
+        <div><a class="btn go" href="https://wa.me/27681616498" target="_blank" rel="noopener" data-wa>Message me on WhatsApp</a></div>
       </div>
-      <p class="lead">Jack does it all, from tiles to trellis doors. His site shows eight trades with photos of his own jobs and puts WhatsApp, a call and a quote request one tap away on every screen. Designed, built, hosted and looked after by Busy Signal IT.</p>
-    </div>
-    <div class="jack-case">
-      <div class="shots rv">
-        <div class="card browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span class="url">jackenterprise.co.za</span></div>
-          <img src="assets/work/jack-enterprise-desktop.webp" width="1280" height="672" alt="Jack Enterprise website home page: One team for your whole renovation" loading="lazy" decoding="async">
-        </div>
-        <div class="handset"><img src="assets/work/jack-enterprise-phone.webp" width="600" height="1180" alt="The Jack Enterprise website on a phone" loading="lazy" decoding="async"></div>
-      </div>
-      <div class="rv">
-        <h3>Eight trades. One site. His own domain.</h3>
-        <ul class="ticks">
-          <li>Services by trade, each with real project photos</li>
-          <li>A gallery of his jobs, filtered by trade</li>
-          <li>WhatsApp, call and quote buttons on every screen</li>
-          <li>Quote form that collects the job, the area and photos</li>
-          <li>Hosted and looked after every month</li>
-        </ul>
-        <div class="cta"><a class="btn" href="https://jackenterprise.co.za" target="_blank" rel="noopener">Visit jackenterprise.co.za <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
-      </div>
-    </div>
-    <div class="wall">
-      <figure class="rv"><img src="assets/work/jack-work-1.webp" width="560" height="420" alt="Epoxy staircase" loading="lazy"><figcaption>Epoxy floors</figcaption></figure>
-      <figure class="rv"><img src="assets/work/jack-work-2.webp" width="560" height="420" alt="Glass balustrade staircase" loading="lazy"><figcaption>Balustrading</figcaption></figure>
-      <figure class="rv"><img src="assets/work/jack-work-3.webp" width="560" height="420" alt="Renovated bathroom with freestanding bath" loading="lazy"><figcaption>Renovations</figcaption></figure>
-      <figure class="rv"><img src="assets/work/jack-work-4.webp" width="560" height="420" alt="Steel carport" loading="lazy"><figcaption>Steel work</figcaption></figure>
-      <figure class="rv"><img src="assets/work/jack-work-5.webp" width="560" height="420" alt="Kitchen cupboards" loading="lazy"><figcaption>Carpentry</figcaption></figure>
-      <figure class="rv"><img src="assets/work/jack-work-6.webp" width="560" height="420" alt="Laminate floor" loading="lazy"><figcaption>Flooring</figcaption></figure>
-      <figure class="rv"><img src="assets/work/jack-work-7.webp" width="560" height="420" alt="Trellis security door" loading="lazy"><figcaption>Security gates</figcaption></figure>
-      <figure class="rv"><img src="assets/work/jack-work-8.webp" width="560" height="420" alt="Glass balcony" loading="lazy"><figcaption>Glass and aluminium</figcaption></figure>
-    </div>
-    <p class="cap">Photos of Jack's own jobs, as shown on his site.</p>
-
-    <div class="card fits rv">
-      <div>
-        <h3>The same build fits your trade.</h3>
-        <p>If people find you on their phone and ask for a quote, this is for you. Add an AI agent on WhatsApp and the quotes answer themselves.</p>
-      </div>
-      <div class="chips"><span>Plumbers</span><span>Carpenters</span><span>Electricians</span><span>Tilers</span><span>Painters</span><span>Roofers</span><span>Builders</span><span>Welders</span><span>Glaziers</span><span>Landscapers</span><span>Mechanics</span><span>Cleaners</span><span>Salons</span><span>Caterers</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="case" id="leads">
-  <div class="wrap">
-    <div class="case-head rv">
-      <div>
-        <p class="case-no"><b>Case 03</b> Lead Engine · Business to business sales · Live</p>
-        <h2 class="h2">It finds the buyers. The sales team just makes the call.</h2>
-      </div>
-      <p class="lead">Lead Engine watches the news, new business listings and company job boards for signs that a business is ready to buy. AI scores every signal against each client's ideal buyer, and only the strongest leads go through. Built, hosted and run by Busy Signal IT.</p>
-    </div>
-    <div class="le-case">
-      <div class="rv">
-        <h3>Signals in. Qualified leads out.</h3>
-        <ul class="ticks">
-          <li>News, new businesses and hiring signals pulled in every day</li>
-          <li>AI scores each lead against the client's buyer profile</li>
-          <li>Nothing reaches a client until I approve it</li>
-          <li>Weekly report on leads, meetings and deals</li>
-          <li>One platform that grows with every new client</li>
-        </ul>
-        <div class="le-clients" aria-label="Clients"><span>Celestia AV</span><span>Leading Business Systems</span></div>
-        <div class="cta"><a class="btn" href="https://busysignal-leads.netlify.app" target="_blank" rel="noopener">See Lead Engine live <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
-      </div>
-      <div class="le-shot rv">
-        <div class="card le-app">
-          <div class="browser-bar"><i></i><i></i><i></i><span class="url">busysignal-leads.netlify.app</span></div>
-          <div class="le-body">
-            <div class="le-top"><div class="le-title">This week's leads<small>Sample data. The real dashboard sits behind a client login.</small></div><span class="pill">Live</span></div>
-            <div class="le-stats"><div class="le-stat"><b>146</b><span>Signals found</span></div><div class="le-stat"><b>18</b><span>Scored 80+</span></div><div class="le-stat"><b>6</b><span>Sent to client</span></div></div>
-            <ul class="le-rows" aria-label="Leads, sample data">
-              <li class="le-row"><div><div class="n">Umhlanga Conference Centre</div><div class="w">News · Expanding to three new venues</div></div><span class="chip ok">Ready</span><span class="le-score">92</span></li>
-              <li class="le-row"><div><div class="n">Karoo Logistics</div><div class="w">Hiring · Office manager, new Midrand branch</div></div><span class="chip ok">Ready</span><span class="le-score">87</span></li>
-              <li class="le-row"><div><div class="n">Bloem Dental Group</div><div class="w">New business · Opened in Bloemfontein</div></div><span class="chip">Review</span><span class="le-score">81</span></li>
-              <li class="le-row"><div><div class="n">Vaal Print Studio</div><div class="w">News · Moving premises</div></div><span class="chip">Watch</span><span class="le-score mid">64</span></li>
-            </ul>
-            <div class="le-gate"><span>Allow leads to reach the client</span><span class="le-tog" aria-hidden="true"></span></div>
-          </div>
-        </div>
-        <p class="cap">Redrawn with made up businesses and numbers. The real one runs live for our clients.</p>
+      <div class="reach">
+        <div><span class="label">WhatsApp</span><span style="display:flex;gap:14px;align-items:center"><code id="num">068 161 6498</code><button type="button" class="copy" data-copy="+27681616498">Copy</button></span></div>
+        <div><span class="label">Email</span><span style="display:flex;gap:14px;align-items:center"><code>busysignalit@gmail.com</code><button type="button" class="copy" data-copy="busysignalit@gmail.com">Copy</button></span></div>
+        <div><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/edmund-gumbo-a6965584" target="_blank" rel="noopener">Edmund Gumbo ↗</a></div>
+        <div><span class="label">GitHub</span><a href="https://github.com/edmundgumbo" target="_blank" rel="noopener">edmundgumbo ↗</a></div>
       </div>
     </div>
   </div>
 </section>
-
-<section class="yours" id="yours">
-  <div class="wrap">
-    <div class="yours-card rv">
-      <div class="yours-in">
-        <p class="kicker">Try it</p>
-        <h2 class="h2">What would I build for you?</h2>
-        <p class="lead">Type your kind of business. If someone does the same thing by hand every day, a system can probably take it over.</p>
-      </div>
-      <div class="ask">
-        <label for="biz">What does your business do?</label>
-        <input id="biz" type="text" autocomplete="off" maxlength="60" placeholder="A panel beater in Germiston">
-        <div class="picks" id="picks">
-          <button type="button" data-v="Mechanic">Mechanic</button>
-          <button type="button" data-v="Hair salon">Hair salon</button>
-          <button type="button" data-v="Plumbing company">Plumbing company</button>
-          <button type="button" data-v="Restaurant">Restaurant</button>
-          <button type="button" data-v="Accounting firm">Accounting firm</button>
-          <button type="button" data-v="Content creator">Content creator</button>
-        </div>
-      </div>
-      <div class="answer" id="answer" aria-live="polite"></div>
-    </div>
-  </div>
-</section>
-
-<section class="case" id="brand">
-  <div class="wrap">
-    <div class="case-head rv">
-      <div>
-        <p class="case-no"><b>Case 04</b> Busy Signal IT · Brand identity</p>
-        <h2 class="h2">The brand is built here too.</h2>
-      </div>
-      <p class="lead">A B that broadcasts: a signal going out and two waves answering back, the opposite of a busy line. One mark that works in orange on dark, black on light and white on anything, with a wordmark that keeps IT in orange.</p>
-    </div>
-    <div class="brand-grid">
-      <div class="tile t-main rv">
-        <div class="lock"><img src="assets/brand/busy-signal-mark.svg" class="bsm" width="300" height="253" alt=""><div><span class="word">Busy<br>Signal <i>IT</i></span><span class="tag">It answers.</span></div></div>
-        <span class="note">Primary lockup · dark</span>
-      </div>
-      <div class="tile t-cream rv"><img src="assets/brand/busy-signal-mark-light.svg" width="300" height="253" alt="Busy Signal IT mark in black and red on cream"><span class="note">On light</span></div>
-      <div class="tile t-icon rv"><img src="favicon.svg" width="200" height="200" alt="Busy Signal IT app icon"><span class="note">App icon</span></div>
-      <div class="tile t-sw rv" aria-label="Colour palette">
-        <div class="sw" style="background:#FF4A00;color:#120A04">#FF4A00</div>
-        <div class="sw" style="background:#FF9A00;color:#120A04">#FF9A00</div>
-        <div class="sw" style="background:#FFB300;color:#120A04">#FFB300</div>
-        <div class="sw" style="background:#FF5722;color:#120A04">#FF5722</div>
-        <div class="sw" style="background:#0B0C11;color:#A2A7B6">#0B0C11</div>
-        <div class="sw" style="background:#FAF8F4;color:#565B6A">#FAF8F4</div>
-      </div>
-      <div class="tile t-white rv"><img src="assets/brand/busy-signal-mark-white.svg" width="300" height="253" alt="Busy Signal IT mark in white" style="filter: brightness(0) invert(1)"><span class="note">Reversed</span></div>
-      <div class="tile t-type rv"><div class="aa grad-text">Aa</div><div class="nm">Montserrat ExtraBold</div><div class="tr">Tracked caps</div><span class="note" style="color:var(--ink-mute)">Typography</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="creds" id="credentials">
-  <div class="wrap">
-    <div class="rv">
-      <p class="kicker">Credentials</p>
-      <h2 class="h2">Certified, and still learning every week.</h2>
-    </div>
-    <div class="cred-grid">
-      <div class="card cred rv">
-        <img src="assets/certs/ibm-ai-fundamentals-badge.png" width="150" height="150" alt="IBM SkillsBuild Artificial Intelligence Fundamentals badge">
-        <div>
-          <h3>Artificial Intelligence Fundamentals</h3>
-          <p class="by">IBM SkillsBuild · Issued January 2026</p>
-          <div class="cta"><a class="btn" href="https://www.credly.com/badges/5d75a79f-7d44-4ae2-86d0-8db96e0eb889" target="_blank" rel="noopener">Verify on Credly <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
-        </div>
-      </div>
-      <div class="rv">
-        <p class="kicker">Built with</p>
-        <div class="stack"><span>OpenAI models</span><span>n8n</span><span>Supabase</span><span>React</span><span>WhatsApp Business API</span><span>Netlify</span><span>GitHub</span></div>
-        <p class="lead" style="font-size:1rem">I pick the tools to suit the job, not the other way round.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="ops" id="live">
-  <div class="wrap ops-grid">
-    <div class="rv"><video src="assets/media/busy-signal-live-ops.mp4" poster="assets/media/busy-signal-live-ops-poster.jpg" muted loop playsinline controls preload="none" id="opsv" aria-label="Busy Signal IT live operations video"></video></div>
-    <div class="rv">
-      <p class="kicker">Live operations</p>
-      <h2 class="h2">Our automations, working in real time.</h2>
-      <p class="lead">A look inside a production flow: a QR code scan becomes a conversation, the AI agent checks live stock, books a viewing and tells the team, while every run is logged as it happens.</p>
-      <div class="cta"><a class="btn ghost" href="https://www.linkedin.com/in/edmund-gumbo-a6965584" target="_blank" rel="noopener">Follow on LinkedIn</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="how" id="how">
-  <div class="wrap">
-    <div class="rv">
-      <p class="kicker">How I work</p>
-      <h2 class="h2">One conversation to start. Then I stay on it.</h2>
-    </div>
-    <div class="how-grid">
-      <article class="card hcard rv"><div class="n grad-text">01</div><h3>Listen</h3><p>We talk through how a normal week runs. I look for the job someone repeats by hand.</p></article>
-      <article class="card hcard rv"><div class="n grad-text">02</div><h3>Build</h3><p>I build the system around the tools you already use, then test it on your real work.</p></article>
-      <article class="card hcard rv"><div class="n grad-text">03</div><h3>Go live</h3><p>It runs inside your business, on WhatsApp, on your website or on your team's screens.</p></article>
-      <article class="card hcard rv"><div class="n grad-text">04</div><h3>Watch and fix</h3><p>I read the logs, catch what goes wrong and fix it, so it gets better every week.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="close" id="contact">
-  <div class="wrap">
-    <div class="rv">
-      <p class="kicker">Contact</p>
-      <h2>Tell me how your week <span class="grad-text">runs.</span></h2>
-      <p class="lead">Any business with a routine worth handing over, in South Africa or anywhere else. Send a message and I'll reply myself.</p>
-      <div class="cta"><a class="btn" href="https://wa.me/27681616498" target="_blank" rel="noopener">Message on WhatsApp</a><a class="btn ghost" href="mailto:busysignalit@gmail.com">Send an email</a></div>
-    </div>
-    <div class="card reach rv">
-      <div class="r"><div class="l"><div class="k">Email</div><div class="v">busysignalit@gmail.com</div></div><button class="copy" type="button" data-copy="busysignalit@gmail.com">Copy</button></div>
-      <div class="r"><div class="l"><div class="k">WhatsApp</div><div class="v">+27 68 161 6498</div></div><button class="copy" type="button" data-copy="+27 68 161 6498">Copy</button></div>
-      <div class="r"><div class="l"><div class="k">LinkedIn</div><a class="v" href="https://www.linkedin.com/in/edmund-gumbo-a6965584" target="_blank" rel="noopener">Edmund Gumbo</a></div></div>
-      <div class="r"><div class="l"><div class="k">GitHub</div><a class="v" href="https://github.com/edmundgumbo" target="_blank" rel="noopener">edmundgumbo</a></div></div>
-    </div>
-  </div>
-</section>
-
 </main>
 
-<footer>
-  <div class="wrap foot">
-    <div class="lockup"><svg class="bsm" viewBox="0 0 740 624" aria-hidden="true" focusable="false"><use href="#mk-b" class="mk-b"/><use href="#mk-tri" class="mk-tri"/><use href="#mk-a1" class="mk-a1"/><use href="#mk-a2" class="mk-a2"/></svg><div><span class="word">Busy Signal <i>IT</i></span><span class="tag">It answers.</span></div></div>
-    <div class="meta">Founded in Johannesburg in 2020<br>© 2026 Edmund Gumbo</div>
-  </div>
-</footer>
+<footer><div class="wrap"><span>© 2026 Busy Signal IT · Edmund Gumbo</span><span>It answers.</span></div></footer>
+
+<nav class="pill" aria-label="Sections">
+  <a href="#build" data-s="build">Try it</a>
+  <a href="#work" data-s="work">Work</a>
+  <a href="#clients" data-s="clients">Clients</a>
+  <a href="#about" data-s="about">About</a>
+  <a href="#contact" data-s="contact" class="wa">Your move</a>
+</nav>
 
 <script>
 (function () {
   var root = document.documentElement;
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
-  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
 
-  /* Theme */
-  var modeBtns = document.querySelectorAll('.mode button');
-  function setMode(m, save) {
-    root.setAttribute('data-theme', m);
-    modeBtns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-mode') === m ? 'true' : 'false'); });
-    var mt = document.querySelector('meta[name="theme-color"]'); if (mt) mt.setAttribute('content', m === 'light' ? '#FAF8F4' : '#0B0C11');
-    if (save) { try { localStorage.setItem('bs-theme', m); } catch (e) {} }
+  /* theme */
+  function setTheme(t) {
+    root.setAttribute('data-theme', t);
+    document.querySelectorAll('.theme button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.t === t ? 'true' : 'false'); });
+    try { localStorage.setItem('bs-theme', t); } catch (e) {}
   }
-  setMode(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark', false);
-  modeBtns.forEach(function (b) { b.addEventListener('click', function () { setMode(b.getAttribute('data-mode'), true); }); });
+  document.querySelectorAll('.theme button').forEach(function (b) { b.addEventListener('click', function () { setTheme(b.dataset.t); }); });
+  setTheme(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
 
-  /* Switchboard */
-  var lines = document.querySelectorAll('.line'), bcount = document.getElementById('bcount'), answered = 0, lastL = -1;
-  function ringOne() {
-    var i; do { i = Math.floor(Math.random() * lines.length); } while (i === lastL && lines.length > 1); lastL = i;
-    var l = lines[i], st = l.querySelector('.ln-st');
-    l.classList.remove('ok'); l.classList.add('ring'); st.textContent = 'Ringing';
-    setTimeout(function () { l.classList.remove('ring'); l.classList.add('ok'); st.textContent = 'Answered by AI'; answered++; bcount.textContent = answered; }, 1500);
-    setTimeout(function () { l.classList.remove('ok'); st.textContent = 'Line open'; }, 5200);
-  }
-  if (!reduce) { setTimeout(ringOne, 900); setInterval(ringOne, 1900); }
-  lines.forEach(function (l) { l.addEventListener('click', function () {
-    var inp = document.getElementById('biz'); inp.value = l.getAttribute('data-biz'); inp.dispatchEvent(new Event('input'));
-    document.getElementById('yours').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
-  }); });
-
-  /* Video plays when visible */
-  var ov = document.getElementById('opsv');
-  if (ov && 'IntersectionObserver' in window && !reduce) {
-    new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { ov.preload = 'auto'; var p = ov.play(); if (p && p.catch) p.catch(function () {}); } else { ov.pause(); } }); }, { threshold: 0.4 }).observe(ov);
+  /* WhatsApp links carry the picked business */
+  var waText = 'Hi Edmund, I saw your portfolio.';
+  function updateWa() {
+    var url = 'https://wa.me/27681616498?text=' + encodeURIComponent(waText);
+    document.querySelectorAll('[data-wa]').forEach(function (a) { a.href = url; });
   }
 
-  /* Reveal */
-  var rv = document.querySelectorAll('.rv');
-  if ('IntersectionObserver' in window) {
-    var ro = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px' });
-    rv.forEach(function (x) { ro.observe(x); });
-  } else { root.classList.add('no-io'); }
-
-  /* Rotating word */
-  var rot = document.querySelectorAll('#rot > span'), ri = 0;
-  if (!reduce) setInterval(function () { rot[ri].classList.remove('on'); ri = (ri + 1) % rot.length; rot[ri].classList.add('on'); }, 2400);
-
-  /* Agent console */
-  var S = [
-    { biz: 'Mokoena Plumbing', ch: 'WhatsApp', who: 'Customer', q: 'Hi, my geyser is leaking in Soweto. Can someone come today?',
-      t: ['Understood: urgent geyser leak in Soweto', 'Checked today’s open slots', 'Found the call out fee in the price list'],
-      a: 'Sorry about the geyser! A plumber can be with you between 14:00 and 16:00 today. Call out is R450. Shall I book it?',
-      x: ['Job card created', 'Owner alerted'] },
-    { biz: 'Glow Studio', ch: 'WhatsApp', who: 'Client', q: 'Can I get knotless braids on Saturday morning?',
-      t: ['Understood: knotless braids, Saturday morning', 'Checked the stylists’ calendar', 'Found the time needed: about 5 hours'],
-      a: 'Hi! Lerato has 08:00 free on Saturday. Knotless braids take about 5 hours. Want me to hold it for you?',
-      x: ['Slot held', 'Reminder set for Friday'] },
-    { biz: 'Dlamini Auto', ch: 'WhatsApp', who: 'Customer', q: 'How much for a service on a 2017 Polo Vivo?',
-      t: ['Understood: minor service, 2017 Polo Vivo', 'Looked up the service price', 'Checked the workshop bookings'],
-      a: 'A minor service on your Polo Vivo is R1 650 with parts. We can take it on Thursday at 08:00. Shall I book it?',
-      x: ['Quote sent', 'Follow up in 2 days'] },
-    { biz: 'Sample property agency', ch: 'WhatsApp', who: 'Enquiry', q: 'Hi, is the studio on Property24 still available?',
-      t: ['Matched the advert to Unit 4B', 'Read live stock: available', 'Pulled the rent and photos'],
-      a: 'Yes! The studio at Protea House is open at R3 100 a month. Here are the photos. Want to view it on Friday?',
-      x: ['Photos sent', 'Agent on duty told'] }
+  /* picker */
+  var P = [
+    { k: 'trade', chip: 'a trade business', biz: 'Moyo Plumbing', av: 'MP',
+      pain: 'You are on a job with dirty hands while the phone rings. By the time you call back, they hired someone else.',
+      build: ['A WhatsApp assistant that answers straight away, takes the address and books a time', 'A website with WhatsApp, call and quote buttons on every screen', 'A daily list of jobs and quotes, so nothing slips'],
+      proof: ['See Jack Enterprise', '#work'],
+      wa: 'Hi Edmund, I run a trade business and I keep missing calls.',
+      chat: [['in', 'Hi, my geyser is leaking in Soweto. Can someone come today?'], ['out', 'Sorry about that! We have a slot at 14:00 today. Call out is R450. Shall I book you?'], ['in', 'Yes please'], ['out', 'Done. Booked for 14:00. Please send your address and a photo of the geyser.']] },
+    { k: 'salon', chip: 'a salon', biz: 'Glow Studio', av: 'GS',
+      pain: 'Half your day goes on replying "are you open Saturday?" while a client sits in the chair.',
+      build: ['A WhatsApp assistant that shows open slots and books them', 'Reminders the day before, so fewer people forget', 'A simple price list it reads from, so every answer is right'],
+      proof: ['See how Alec books viewings', '#work'],
+      wa: 'Hi Edmund, I run a salon and bookings take up my whole day.',
+      chat: [['in', 'Hi! Any slots on Saturday for braids?'], ['out', 'Hi! Saturday we have 09:00 and 13:30. Knotless braids start at R650.'], ['in', '09:00 please'], ['out', 'You are booked for Saturday 09:00. We will send a reminder on Friday.']] },
+    { k: 'agency', chip: 'a property agency', biz: 'Msasa Homes', av: 'MH',
+      pain: 'The same "is it still available?" message comes in fifty times a day, and the good tenants go elsewhere while you catch up.',
+      build: ['One place to list and price every flat', 'A WhatsApp assistant that sends prices and photos and books viewings', 'A website and adverts that update the moment a flat is let'],
+      proof: ['See RISKPROP Realty', '#work'],
+      wa: 'Hi Edmund, I run a property agency and want something like Alec.',
+      chat: [['in', 'Hi, is the studio in Kempton Park still available?'], ['out', 'Hi! Yes, the studio is R3 100 a month. Here are some photos.'], ['in', 'Can I see it Friday?'], ['out', 'You are set for Friday at 13:00. The agent on duty has your details.']] },
+    { k: 'shop', chip: 'a shop or restaurant', biz: 'Mama Rudo’s Kitchen', av: 'MR',
+      pain: 'Orders come in by message, call and walk in, and some of them get lost along the way.',
+      build: ['A WhatsApp menu that takes orders and sends them to the kitchen', 'A website with your menu, hours and a one tap order button', 'Online payments when you want them'],
+      proof: ['See Jack Enterprise', '#work'],
+      wa: 'Hi Edmund, I run a shop or restaurant and want to take orders on WhatsApp.',
+      chat: [['in', 'Are you open tonight?'], ['out', 'Yes! Open until 21:00. Tonight we have sadza with beef stew for R95.'], ['in', 'Two please, for collection at 19:00'], ['out', 'Order in. Two beef stews ready at 19:00. Total R190.']] },
+    { k: 'events', chip: 'an events business', biz: 'Night Live Events', av: 'NL',
+      pain: 'Ticket sites take a cut of every sale, and you never get to keep your own list of guests.',
+      build: ['Your own ticketing system on your own website', 'Guest lists and sales in one place', 'WhatsApp answers for "where is it?" and "is it sold out?"'],
+      proof: ['See my clients', '#clients'],
+      wa: 'Hi Edmund, I run events and want my own ticketing.',
+      chat: [['in', 'Are there still tickets for Saturday?'], ['out', 'Yes! General is R150 and VIP is R350. Here is your link to buy.'], ['in', 'Bought 2 VIP'], ['out', 'Thank you! Your 2 VIP tickets are on their way to your email.']] },
+    { k: 'b2b', chip: 'a company that sells to companies', biz: 'Your sales team', av: 'LE',
+      pain: 'Your sales team spends more time looking for someone to call than actually calling.',
+      build: ['A daily list of businesses that show signs they are ready to buy', 'A score for each one, so the team calls the best first', 'A weekly report on leads, meetings and deals'],
+      proof: ['See Lead Engine', '#work'],
+      wa: 'Hi Edmund, we sell to companies and need more good leads.',
+      chat: [['out', 'Morning! 6 new strong leads today.'], ['out', 'Top one: Karoo Logistics is opening a Midrand branch and hiring an office manager. Fit score 87.'], ['in', 'Nice, send me their details'], ['out', 'Sent. The contact is in your list with a suggested first message.']] }
   ];
-  var body = document.getElementById('cbody'), tabs = document.querySelectorAll('.tabs button'), prog = document.getElementById('cprog');
-  var cur = 0, timers = [], paused = false, cycleT, progAnim;
-  function clear() { timers.forEach(clearTimeout); timers = []; }
-  function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
-  function play(i) {
-    clear(); cur = i; body.innerHTML = '';
-    tabs.forEach(function (b, j) { b.setAttribute('aria-selected', j === i ? 'true' : 'false'); });
-    var s = S[i];
-    body.appendChild(el('div', 'c-biz', '<span>' + esc(s.biz) + '</span><span>' + esc(s.ch) + '</span>'));
-    var q = el('div', 'msg them fade-in', '<b>' + esc(s.who) + '</b><span class="tx"></span>'); body.appendChild(q);
-    var tx = q.querySelector('.tx');
-    var think = el('div', 'think'); s.t.forEach(function (l) { think.appendChild(el('div', 'ln', esc(l))); });
-    if (reduce) {
-      tx.textContent = s.q; body.appendChild(think); think.querySelectorAll('.ln').forEach(function (l) { l.classList.add('in', 'done'); });
-      body.appendChild(el('div', 'msg ai', '<b>AI agent</b>' + esc(s.a)));
-      var ac = el('div', 'acts'); s.x.forEach(function (a) { ac.appendChild(el('span', '', esc(a))); }); body.appendChild(ac); return;
-    }
-    var n = 0; tx.classList.add('caret');
-    (function type() { if (n < s.q.length) { tx.textContent = s.q.slice(0, n); n += 2; later(type, 28); } else { tx.textContent = s.q; tx.classList.remove('caret'); step(); } })();
-    function step() {
-      later(function () { body.appendChild(think); }, 300);
-      var lns = think.querySelectorAll('.ln');
-      lns.forEach(function (l, k) { later(function () { l.classList.add('in'); }, 500 + k * 650); later(function () { l.classList.add('done'); }, 900 + k * 650); });
-      var t0 = 700 + lns.length * 650;
-      later(function () { body.appendChild(el('div', 'msg ai fade-in', '<b>AI agent</b>' + esc(s.a))); }, t0);
-      later(function () { var ac = el('div', 'acts'); s.x.forEach(function (a) { ac.appendChild(el('span', '', esc(a))); }); body.appendChild(ac); }, t0 + 700);
-    }
+  var chips = document.getElementById('chips'), chat = document.getElementById('chat');
+  var timers = [];
+  function clearT() { timers.forEach(clearTimeout); timers = []; }
+  function addMsg(m) {
+    var d = document.createElement('div'); d.className = 'msg ' + m[0];
+    d.textContent = m[1];
+    var s = document.createElement('small'); s.textContent = m[0] === 'out' ? 'sent by assistant' : 'customer'; d.appendChild(s);
+    chat.appendChild(d);
+    while (chat.children.length > 6) chat.removeChild(chat.firstChild);
   }
-  function schedule() {
-    clearTimeout(cycleT); if (reduce) return;
-    if (progAnim) progAnim.cancel();
-    if (prog.animate) progAnim = prog.animate([{ width: '0%' }, { width: '100%' }], { duration: 10500, easing: 'linear', fill: 'forwards' });
-    cycleT = setTimeout(function () { if (!paused) { play((cur + 1) % S.length); schedule(); } else { schedule(); } }, 10500);
-  }
-  tabs.forEach(function (b) { b.addEventListener('click', function () { play(+b.getAttribute('data-i')); schedule(); }); });
-  var con = document.getElementById('console');
-  con.addEventListener('pointerenter', function () { paused = true; }); con.addEventListener('pointerleave', function () { paused = false; });
-  play(0); schedule();
-
-  /* Stock Manager sync model */
-  var units = [
-    { id: '4B', name: 'Protea House', type: 'Studio', rent: 3100, on: true },
-    { id: '2A', name: 'Jacaranda Court', type: '1 bedroom', rent: 4200, on: true },
-    { id: '1C', name: 'Acacia Place', type: 'Studio', rent: 2950, on: true }
-  ];
-  var raised = false;
-  function rent(u) { return raised ? Math.round(u.rent * 1.07 / 10) * 10 : u.rent; }
-  function R(n) { return 'R' + String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
-  var ul = document.getElementById('units');
-  function drawUnits() {
-    ul.innerHTML = '';
-    units.forEach(function (u, i) {
-      var li = el('li', 'unit' + (u.on ? '' : ' let'));
-      li.innerHTML = '<span class="u-badge">' + u.id + '</span><span class="u-name">' + esc(u.name) + '<small>' + esc(u.type) + ' · ' + (u.on ? 'Available' : 'Let') + '</small></span><span class="u-rent' + (raised ? ' bump' : '') + '">' + R(rent(u)) + '</span>';
-      var b = el('button', 'tog'); b.type = 'button'; b.setAttribute('aria-pressed', u.on ? 'true' : 'false'); b.setAttribute('aria-label', 'Unit ' + u.id + ' on the market');
-      b.addEventListener('click', function () { u.on = !u.on; log('You ' + (u.on ? 'listed ' + u.id + ' again' : 'marked ' + u.id + ' as let')); change(); });
-      li.appendChild(b); ul.appendChild(li);
+  function play(p) {
+    clearT(); chat.innerHTML = '';
+    if (reduce) { p.chat.forEach(addMsg); return; }
+    var t = 200;
+    p.chat.forEach(function (m) {
+      if (m[0] === 'out') {
+        timers.push(setTimeout(function () { var ty = document.createElement('div'); ty.className = 'typing'; ty.innerHTML = '<i></i><i></i><i></i>'; ty.id = 'ty'; chat.appendChild(ty); }, t));
+        t += 1100;
+        timers.push(setTimeout(function () { var ty = document.getElementById('ty'); if (ty) ty.remove(); addMsg(m); }, t));
+      } else { timers.push(setTimeout(function () { addMsg(m); }, t)); }
+      t += 900;
     });
   }
-  function drawOuts() {
-    var avail = units.filter(function (u) { return u.on; });
-    var wl = document.getElementById('w-list'); wl.innerHTML = '';
-    if (!avail.length) wl.appendChild(el('li', 'w-empty', 'No units available right now'));
-    avail.forEach(function (u) { wl.appendChild(el('li', '', '<span><b>' + u.id + '</b> ' + esc(u.name) + '</span><span>' + R(rent(u)) + '</span>')); });
-    var al = document.getElementById('ad-list'); al.innerHTML = '';
-    units.forEach(function (u) { al.appendChild(el('li', '', '<span><b>' + u.id + '</b> ' + esc(u.type) + '</span><span class="' + (u.on ? 'st-live">Listed' : 'st-off">Paused') + '</span>')); });
-    var p = units[0], alt = units.filter(function (u) { return u.on && u.type === 'Studio' && u.id !== '4B'; })[0];
-    var txt;
-    if (p.on) txt = 'Yes! The studio at Protea House is available at ' + R(rent(p)) + ' a month. Shall I send you photos?';
-    else if (alt) txt = 'That studio has just been let, sorry! There’s a studio at ' + alt.name + ' for ' + R(rent(alt)) + ' a month. Want the photos?';
-    else txt = 'Those studios have just been let. I’ll message you the moment one opens up.';
-    document.getElementById('alec-reply').innerHTML = '<b>Alec</b>' + esc(txt);
+  function pick(i) {
+    var p = P[i];
+    chips.querySelectorAll('.chip').forEach(function (c, j) { c.setAttribute('aria-pressed', j === i ? 'true' : 'false'); });
+    document.getElementById('p-pain').textContent = p.pain;
+    var ul = document.getElementById('p-build'); ul.innerHTML = '';
+    p.build.forEach(function (b, j) { var li = document.createElement('li'); li.innerHTML = '<span>0' + (j + 1) + '</span>'; li.appendChild(document.createTextNode(b)); ul.appendChild(li); });
+    var pr = document.getElementById('p-proof'); pr.textContent = p.proof[0] + ' →'; pr.href = p.proof[1];
+    document.getElementById('p-biz').textContent = p.biz; document.getElementById('p-av').textContent = p.av;
+    waText = p.wa; updateWa(); play(p);
   }
-  var auditEl = document.getElementById('audit');
-  function log(t) { auditEl.querySelectorAll('.new').forEach(function (x) { x.classList.remove('new'); }); var li = el('li', 'new', '<span>' + esc(t) + '</span><time>just now</time>'); auditEl.insertBefore(li, auditEl.firstChild); while (auditEl.children.length > 4) auditEl.removeChild(auditEl.lastChild); }
-  var sync = document.getElementById('sync'), syncT;
-  function change() {
-    drawUnits();
-    sync.classList.remove('firing'); void sync.offsetWidth; sync.classList.add('firing');
-    document.querySelectorAll('.out').forEach(function (o) { o.classList.remove('hit'); });
-    document.querySelectorAll('[data-stamp]').forEach(function (s) { s.textContent = 'syncing'; });
-    clearTimeout(syncT);
-    syncT = setTimeout(function () {
-      drawOuts();
-      document.querySelectorAll('.out').forEach(function (o) { o.classList.add('hit'); });
-      document.querySelectorAll('[data-stamp]').forEach(function (s) { s.textContent = 'updated just now'; });
-      setTimeout(function () { document.querySelectorAll('.out').forEach(function (o) { o.classList.remove('hit'); }); }, 1400);
-    }, reduce ? 0 : 650);
-  }
-  var rb = document.getElementById('raise');
-  rb.addEventListener('click', function () { raised = !raised; log(raised ? 'You raised all rents by 7%' : 'You undid the rent increase'); rb.setAttribute('aria-pressed', raised ? 'true' : 'false'); rb.textContent = raised ? 'Undo increase' : 'Raise rents 7%'; change(); });
-  drawUnits(); drawOuts();
+  P.forEach(function (p, i) { var b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.id = 'chip-' + p.k; b.textContent = p.chip; b.addEventListener('click', function () { pick(i); }); chips.appendChild(b); });
+  pick(0);
 
-  /* Your business */
-  var book = [
-    { k: ['mechanic','garage','workshop','auto','car ','cars','panel','tyre','tire','motor','vehicle'], items: ['Customers book a slot on WhatsApp and get a reminder the day before.', 'Quotes go out the same day, and anyone who hasn’t replied gets a nudge two days later.', 'You get a message when a part you use every week runs low.'] },
-    { k: ['salon','hair','barber','nail','beauty','spa','lash','brow','makeup','braid'], items: ['Clients book and move appointments on WhatsApp, so you aren’t answering the phone with your hands full.', 'A reminder the day before, and a message a few weeks later asking if they want to book again.'] },
-    { k: ['creator','influencer','content','instagram','facebook','tiktok','youtube','follower','podcast','blog'], items: ['Your messages sorted into brand enquiries, fans and spam, with brand enquiries sent to your email.', 'Captions and post drafts written from your voice notes, in your own voice.', 'A monthly summary of which posts brought in paid work.'] },
-    { k: ['restaurant','cafe','café','coffee','food','takeaway','kitchen','catering','bakery','bar','pub','shisa','braai'], items: ['WhatsApp orders collected into one list the kitchen can read.', 'A stock count at closing that tells you what to order tomorrow.', 'Google reviews answered in your tone, with complaints sent to you first.'] },
-    { k: ['account','bookkeep','tax','audit','finance','payroll'], items: ['Receipts and invoices read, labelled and filed into the right client folder.', 'Clients reminded about missing documents before month end, so you don’t have to chase.'] },
-    { k: ['property','rental','landlord','estate','letting','agency','apartment','flats','realtor'], items: ['A WhatsApp agent like Alec that answers enquiries from your live stock.', 'One stock list that feeds your website and your adverts at the same time.', 'Every enquiry kept, so you can tell past enquirers when the right unit opens up.'] },
-    { k: ['plumb','electric','builder','construction','contractor','handyman','painter','roof','solar','tiler','carpent','renovat','weld','glaz','landscap'], items: ['A website like Jack Enterprise’s, with WhatsApp and quote buttons on every screen.', 'An AI agent that answers quote requests and books site visits.', 'Job cards created from the photos and voice notes your team sends from site.'] },
-    { k: ['shop','store','retail','boutique','clothing','spaza','fashion','hardware'], items: ['A WhatsApp catalogue that answers stock questions from your real stock count.', 'An alert before a best seller runs out.'] },
-    { k: ['clinic','doctor','dentist','physio','practice','vet','optom'], items: ['Appointment reminders and easy rescheduling, so fewer slots go empty.', 'Forms filled in on the phone before the patient walks in.'] },
-    { k: ['school','tutor','teacher','creche','academy','coach','gym','trainer','fitness','dance'], items: ['Bookings and reminders on WhatsApp.', 'Fees followed up politely, so you aren’t the one chasing.'] },
-    { k: ['transport','logistic','delivery','courier','truck','taxi','fleet','driver','moving'], items: ['Drivers check in and send proof of delivery photos from their phones.', 'Customers get an arrival time on WhatsApp without calling the office.'] }
+  /* statement words light up on scroll */
+  var st = document.getElementById('statement');
+  var hl = ['missed', 'answer,', 'quote', 'booking'];
+  st.innerHTML = st.textContent.split(' ').map(function (w) { return '<span class="w' + (hl.indexOf(w) > -1 ? ' hl' : '') + '">' + w + '</span>'; }).join(' ');
+  var words = st.querySelectorAll('.w');
+
+  /* stock manager demo */
+  var units = [
+    { b: 'Protea House', u: 'Studio 1A', r: 3100, on: true },
+    { b: 'Acacia Place', u: 'One bed 2B', r: 4250, on: true },
+    { b: 'Jacaranda Court', u: 'Two bed 3C', r: 5400, on: true },
+    { b: 'Marula Gardens', u: 'Studio 4D', r: 2950, on: false }
   ];
-  var fallback = ['Most businesses have one job someone repeats by hand every day. That is usually where I start.', 'Tell me how a normal week runs and I’ll show you which part a system can take over.'];
-  var input = document.getElementById('biz'), answer = document.getElementById('answer'), tmr;
-  function render(raw) {
-    var text = (raw || '').trim(), low = ' ' + text.toLowerCase() + ' ', hit = null;
-    for (var i = 0; i < book.length && !hit; i++) for (var j = 0; j < book[i].k.length; j++) if (low.indexOf(book[i].k[j]) !== -1) { hit = book[i]; break; }
-    var items = text ? (hit ? hit.items : fallback) : book[0].items;
-    answer.textContent = '';
-    var said = el('p', 'said'); said.textContent = text ? 'You said: ' + text : 'Example: a mechanic';
-    var h = el('h3'); h.textContent = 'Where I would start';
-    var u = el('ul'); items.forEach(function (t) { var li = el('li'); li.textContent = t; u.appendChild(li); });
-    var f = el('p', 'fine'); f.textContent = 'These are starting points. The real plan comes from one conversation about how your week runs.';
-    answer.appendChild(said); answer.appendChild(h); answer.appendChild(u); answer.appendChild(f);
-    answer.classList.remove('swap'); void answer.offsetWidth; answer.classList.add('swap');
+  var ul2 = document.getElementById('units');
+  function rand(n) { return 'R' + n.toLocaleString('en-ZA').replace(/,/g, ' ').replace(/ /g, ' '); }
+  function flash(id) { var e = document.getElementById(id); e.classList.add('flash'); setTimeout(function () { e.classList.remove('flash'); }, 700); }
+  function renderUnits(changed) {
+    ul2.innerHTML = '';
+    units.forEach(function (x, i) {
+      var row = document.createElement('div'); row.className = 'unit';
+      row.innerHTML = '<div><b>' + x.u + '</b><small>' + x.b + '</small></div><span class="rent">' + rand(x.r) + '</span>';
+      var sw = document.createElement('button'); sw.type = 'button'; sw.className = 'sw'; sw.id = 'unit-' + i; sw.setAttribute('role', 'switch');
+      sw.setAttribute('aria-checked', x.on ? 'true' : 'false'); sw.setAttribute('aria-label', x.u + ' at ' + x.b + ' available');
+      sw.addEventListener('click', function () { x.on = !x.on; renderUnits(true); });
+      row.appendChild(sw); ul2.appendChild(row);
+    });
+    var live = units.filter(function (x) { return x.on; });
+    document.getElementById('web-n').textContent = live.length;
+    document.getElementById('ads-n').textContent = live.length * 2;
+    document.getElementById('alec-txt').textContent = live.length
+      ? '"We have ' + live.length + ' open: ' + live.map(function (x) { return x.u.toLowerCase() + ' at ' + x.b + ' for ' + rand(x.r); }).join(', ') + '."'
+      : '"Sorry, everything is let right now. Can I add you to the waiting list?"';
+    if (changed) { flash('o-alec'); flash('o-web'); flash('o-ads'); }
   }
-  render('');
-  input.addEventListener('input', function () { clearTimeout(tmr); tmr = setTimeout(function () { render(input.value); }, 220); });
-  document.getElementById('picks').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; input.value = b.getAttribute('data-v'); render(input.value); });
+  document.getElementById('raise').addEventListener('click', function () { units.forEach(function (x) { x.r = Math.round(x.r * 1.07 / 50) * 50; }); renderUnits(true); });
+  renderUnits(false);
 
-  /* Copy */
-  document.querySelectorAll('.copy').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var val = btn.getAttribute('data-copy');
-      function done() { btn.textContent = 'Copied'; btn.classList.add('done'); setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600); }
-      function sel() { var e = btn.parentNode.querySelector('.v'); var r = document.createRange(); r.selectNodeContents(e); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); done(); }
-      try { navigator.clipboard.writeText(val).then(done, sel); } catch (err) { sel(); }
+  /* jack gallery */
+  var G = [['jack-work-1', 'Epoxy floors', 'Epoxy staircase'], ['jack-work-2', 'Balustrading', 'Glass balustrade staircase'], ['jack-work-3', 'Renovations', 'Renovated bathroom with freestanding bath'], ['jack-work-4', 'Steel work', 'Steel carport'], ['jack-work-5', 'Carpentry', 'Kitchen cupboards'], ['jack-work-6', 'Flooring', 'Laminate floor'], ['jack-work-7', 'Security gates', 'Trellis security door'], ['jack-work-8', 'Glass and aluminium', 'Glass balcony']];
+  var gal = document.getElementById('gal'), gc = document.getElementById('gal-chips');
+  G.forEach(function (g) { var f = document.createElement('figure'); f.dataset.t = g[1]; f.innerHTML = '<img src="assets/work/' + g[0] + '.webp" width="560" height="420" alt="' + g[2] + '" loading="lazy"><figcaption>' + g[1] + '</figcaption>'; gal.appendChild(f); });
+  ['All'].concat(G.map(function (g) { return g[1]; })).forEach(function (t, i) {
+    var b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.id = 'trade-' + i; b.textContent = t; b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+    b.addEventListener('click', function () {
+      gc.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', c === b ? 'true' : 'false'); });
+      gal.querySelectorAll('figure').forEach(function (f) { f.classList.toggle('dim', t !== 'All' && f.dataset.t !== t); });
+    });
+    gc.appendChild(b);
+  });
+
+  /* lead engine demo */
+  var L = [['Umhlanga Conference Centre', 'News: opening three new venues', 92], ['Karoo Logistics', 'Hiring: office manager, new Midrand branch', 87], ['Bloem Dental Group', 'New business in Bloemfontein', 81], ['Vaal Print Studio', 'News: moving premises', 64], ['Cape Fresh Foods', 'Hiring: one driver', 41]];
+  var le = document.getElementById('leads');
+  L.forEach(function (l, i) { var r = document.createElement('div'); r.className = 'lead-row' + (l[2] >= 80 ? ' hot' : ''); r.innerHTML = '<div><b>' + l[0] + '</b><small>' + l[1] + '</small></div><div class="bar"><i style="width:' + l[2] + '%"></i></div><span class="state">' + l[2] + (l[2] >= 80 ? ' · ready' : ' · watch') + '</span>'; le.appendChild(r); });
+  var allow = document.getElementById('allow');
+  allow.addEventListener('click', function () {
+    var on = allow.getAttribute('aria-checked') !== 'true'; allow.setAttribute('aria-checked', on ? 'true' : 'false');
+    var n = 0;
+    le.querySelectorAll('.lead-row').forEach(function (r, i) {
+      var hot = L[i][2] >= 80;
+      setTimeout(function () { r.classList.toggle('sent', on && hot); r.querySelector('.state').textContent = L[i][2] + (on && hot ? ' · sent' : hot ? ' · ready' : ' · watch'); }, reduce ? 0 : i * 180);
+      if (on && hot) n++;
+    });
+    document.getElementById('s-sent').textContent = n;
+  });
+
+  /* copy buttons */
+  document.querySelectorAll('.copy').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var v = b.dataset.copy, done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1500); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(v).then(done, function () { selectNext(b); });
+      else selectNext(b);
     });
   });
+  function selectNext(b) { var c = b.previousElementSibling; var r = document.createRange(); r.selectNodeContents(c); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+
+  /* count up for clients */
+  var cnt = document.getElementById('count'), counted = false;
+  function countUp() { if (counted || reduce) return; counted = true; var i = 0; cnt.textContent = '0'; var iv = setInterval(function () { i++; cnt.textContent = i; if (i >= 5) clearInterval(iv); }, 160); }
+
+  /* scroll driven bits */
+  var steps = document.getElementById('steps'), draw = document.getElementById('draw'), stepEls = steps.querySelectorAll('.step');
+  var pills = document.querySelectorAll('.pill a'), secs = ['build', 'work', 'clients', 'about', 'contact'].map(function (id) { return document.getElementById(id); });
+  function onScroll() {
+    var vh = window.innerHeight;
+    if (!reduce) {
+      var r = st.getBoundingClientRect();
+      var p = Math.min(1, Math.max(0, (vh * .85 - r.top) / (r.height + vh * .35)));
+      var lit = Math.round(p * words.length);
+      words.forEach(function (w, i) { w.classList.toggle('on', i < lit); });
+    }
+    var sr = steps.getBoundingClientRect();
+    var sp = Math.min(1, Math.max(0, (vh * .6 - sr.top) / sr.height));
+    draw.setAttribute('y2', (sp * 100).toFixed(1));
+    stepEls.forEach(function (s) { var t = s.getBoundingClientRect().top; s.classList.toggle('on', t < vh * .6); });
+    var cr = cnt.getBoundingClientRect(); if (cr.top < vh * .8 && cr.bottom > 0) countUp();
+    var cur = null; secs.forEach(function (s) { if (s.getBoundingClientRect().top < vh * .4) cur = s.id; });
+    pills.forEach(function (a) { a.classList.toggle('on', a.dataset.s === cur && cur !== 'contact'); });
+  }
+  if (reduce) words.forEach(function (w) { w.classList.add('on'); });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
 })();
 </script>
 </body>
