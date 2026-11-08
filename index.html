@@ -307,6 +307,22 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
   html { scroll-behavior: auto; }
   .statement .w { opacity: 1; }
 }
+
+/* boxless demos (Nov 2026) */
+.phone { background: none; border: 0; border-radius: 0; box-shadow: none; padding: 0; position: relative; isolation: isolate; }
+.phone::before { content: ""; position: absolute; z-index: -1; left: 50%; top: 52%; width: 125%; aspect-ratio: 300 / 253; transform: translate(-50%, -50%); background: url("assets/brand/busy-signal-mark.svg") center / contain no-repeat; opacity: .07; pointer-events: none; }
+:root[data-theme="light"] .phone::before { background-image: url("assets/brand/busy-signal-mark-light.svg"); opacity: .06; }
+.phone-top { padding: 0 0 14px; }
+.msg.in { background: var(--raise); }
+.demo { background: none; border: 0; border-radius: 0; padding: 0; position: relative; isolation: isolate; }
+.demo::before { content: ""; position: absolute; z-index: -1; inset: -12% -10%; background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 9%, transparent), transparent 75%); pointer-events: none; }
+:root[data-theme="light"] .demo::before { background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 7%, transparent), transparent 75%); }
+
+/* client markers (Nov 2026) */
+.client { display: flex; align-items: center; gap: 16px; padding-bottom: 18px; border-bottom: 2px solid var(--accent); width: fit-content; max-width: 100%; }
+.client-n { font: 400 clamp(44px, 5vw, 64px)/.9 var(--serif); color: var(--accent); font-variant-numeric: tabular-nums; }
+.client-name { display: block; font: 600 clamp(22px, 2.4vw, 28px)/1.1 var(--sans); color: var(--ink); letter-spacing: -.01em; }
+.client-kind { display: block; margin-top: 6px; font: 400 12px/1.2 var(--mono); color: var(--brass); letter-spacing: .12em; text-transform: uppercase; }
 </style>
 </head>
 <body>
@@ -400,7 +416,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
     <!-- CASE 1 -->
     <article class="case">
       <div class="case-txt">
-        <span class="num">RISKPROP REALTY · PROPERTY AGENCY</span>
+        <div class="client"><span class="client-n">01</span><div><b class="client-name">RISKPROP Realty</b><span class="client-kind">Property agency</span></div></div>
         <h3>One button. Everything updates.</h3>
         <p class="lead">I built the whole system behind their rentals. The team lists and prices every flat in one place. Alec, their WhatsApp assistant, answers tenants day and night, sends photos and books viewings. Change a flat once and Alec, the website and the adverts all know straight away.</p>
         <div class="case-links">
@@ -423,7 +439,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
     <!-- CASE 2 -->
     <article class="case">
       <div class="case-txt">
-        <span class="num">JACK ENTERPRISE · BUILDING AND RENOVATIONS</span>
+        <div class="client"><span class="client-n">02</span><div><b class="client-name">Jack Enterprise</b><span class="client-kind">Building and renovations</span></div></div>
         <h3>A website that works like a full team.</h3>
         <p class="lead">Jack does it all, from tiles to trellis doors. His site shows eight trades with photos of his own jobs, and puts WhatsApp, a call and a quote request one tap away on every screen. I designed it, built it and look after it every month.</p>
         <div class="case-links"><a class="link" href="https://jackenterprise.co.za" target="_blank" rel="noopener">jackenterprise.co.za ↗</a></div>
@@ -440,7 +456,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
     <!-- CASE 3 -->
     <article class="case">
       <div class="case-txt">
-        <span class="num">LEAD ENGINE · FINDING NEW CLIENTS</span>
+        <div class="client"><span class="client-n">03</span><div><b class="client-name">Lead Engine</b><span class="client-kind">Finding new clients</span></div></div>
         <h3>It finds the buyers. The sales team makes the call.</h3>
         <p class="lead">Lead Engine reads the news, new business listings and company job adverts for signs that a business is ready to buy. Each lead gets a score for how well it fits the client. Only the strong ones go through, and only after I check them.</p>
         <div class="case-links"><a class="link" href="https://busysignal-leads.netlify.app" target="_blank" rel="noopener">See Lead Engine ↗</a></div>
